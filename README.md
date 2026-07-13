@@ -4,9 +4,9 @@ A responsive static academic website hosted by GitHub Pages.
 
 ## Publication updates
 
-`scripts/update_publications.py` retrieves publication metadata from OpenAlex using ORCID `0000-0003-0091-9773`. GitHub Actions runs it every Monday and commits changes only when the metadata changed. It can also be run manually from the Actions tab.
+`scripts/update_publications.py` retrieves the public publication list from Google Scholar profile `uqPekUQAAAAJ`. GitHub Actions runs it every Monday and commits changes only when the profile changed. It can also be run manually from the Actions tab. If Scholar temporarily blocks automated access, the script fails safely and preserves the existing site data.
 
-Google Scholar and ResearchGate are linked as external profiles. They are intentionally not scraped directly because automated access is unstable and can trigger blocking.
+Google Scholar is the authoritative publication source. ResearchGate and ORCID remain linked as complementary profiles.
 
 ## Local preview
 
