@@ -1,0 +1,340 @@
+{
+  "updated_at": "2026-07-13",
+  "total_works": 37,
+  "openalex_author_id": "https://openalex.org/A5001253131",
+  "works": [
+    {
+      "title": "YZFishDB: A curated DNA reference database for the fishes of the Yangtze River Basin",
+      "year": 2026,
+      "venue": "Aquatic Diversity and Ecology",
+      "authors": "Zi Xun Kua, Houhua Bing, Y N Wu, Yanjun Shen, Sébastien Brosse, Jing Zhang, Yuxin Hu, Jiayang He, J Q Xu, Guohuan Su",
+      "url": "https://doi.org/10.1016/j.ade.2026.100009",
+      "cited_by_count": 0,
+      "openalex_id": "https://openalex.org/W7164209716"
+    },
+    {
+      "title": "YZFishDB: a curated DNA reference database for fishes of the Yangtze River Basin",
+      "year": 2026,
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "authors": "Zi Xun Kua, Houhua Bing, Yue Wu, Yanjun Shen, Sébastien Brosse, Jing Zhang, Yu Hu, Jiayang He, Xu J, Guohuan Su",
+      "url": "https://doi.org/10.5281/zenodo.18155084",
+      "cited_by_count": 0,
+      "openalex_id": "https://openalex.org/W7164653949"
+    },
+    {
+      "title": "YZFishDB: a curated DNA reference database for fishes of the Yangtze River Basin",
+      "year": 2026,
+      "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+      "authors": "Zi Xun Kua, Houhua Bing, Yue Wu, Yanjun Shen, Sébastien Brosse, Jing Zhang, Yu Hu, Jiayang He, Xu J, Guohuan Su",
+      "url": "https://doi.org/10.5281/zenodo.18155083",
+      "cited_by_count": 0,
+      "openalex_id": "https://openalex.org/W7164647203"
+    },
+    {
+      "title": "Chromosome-level genome assembly of the obligate cave loach Troglonectes daqikongensis",
+      "year": 2025,
+      "venue": "Scientific Data",
+      "authors": "Houhua Bing, Wenyu Fang, Jing He, Yongrui Lu, Zichen Xiong, Jianguo Xu, Guohuan Su",
+      "url": "https://doi.org/10.1038/s41597-025-06184-1",
+      "cited_by_count": 0,
+      "openalex_id": "https://openalex.org/W4417034087"
+    },
+    {
+      "title": "Global Patterns and Determinants of Multiple Facets of Freshwater Fishes Beta Diversity",
+      "year": 2025,
+      "venue": "Global Ecology and Biogeography",
+      "authors": "Ziqi Chen, Congjun Xu, Sébastien Brosse, Aurèle Toussaint, Jun Xu, Guohuan Su",
+      "url": "https://doi.org/10.1111/geb.70181",
+      "cited_by_count": 2,
+      "openalex_id": "https://openalex.org/W4417311410"
+    },
+    {
+      "title": "Ecological similarity governs non-native fish establishment while human pressure and native diversity shape invasion richness",
+      "year": 2025,
+      "venue": "Science Advances",
+      "authors": "Meng Xu, Miao Fang, M.U. Mohamed Anas, Nicholas E. Mandrak, Cindy Chu, Hong Qian, Yong Cao, Chunlong Liu, Ross N. Cuthbert, Shaopeng Li, Guohuan Su, Pablo A. Tedesco, Jaimie T. A. Dick, Hui Wei, Fandong Yu, Lu Shu, Xuejie Wang, Xidong Mu, Dangen Gu",
+      "url": "https://doi.org/10.1126/sciadv.adw4347",
+      "cited_by_count": 15,
+      "openalex_id": "https://openalex.org/W4413054987"
+    },
+    {
+      "title": "Terrestrial protected areas stabilize the inland habitats of diadromous fishes under climate change",
+      "year": 2025,
+      "venue": "SSRN Electronic Journal",
+      "authors": "Xiongfeng Bai, Peng Zhang, Zhi Min Yang, Gaël Grenouillet, Jörn Geßner, Xianghong Dong, Benjamin R. Shipley, Siyang Wang, Sébastien Brosse, Yang Li, Nan He, Guohuan Su, Jianbo Chang",
+      "url": "https://doi.org/10.2139/ssrn.5450322",
+      "cited_by_count": 1,
+      "openalex_id": "https://openalex.org/W4414038549"
+    },
+    {
+      "title": "Social benefits and environmental performance of aquaculture need to improve worldwide",
+      "year": 2024,
+      "venue": "Communications Earth & Environment",
+      "authors": "Congjun Xu, Guohuan Su, Sébastien Brosse, Kangshun Zhao, Min Zhang, Jun Xu",
+      "url": "https://doi.org/10.1038/s43247-024-01790-0",
+      "cited_by_count": 6,
+      "openalex_id": "https://openalex.org/W4404296431"
+    },
+    {
+      "title": "Intra-annual compositions and diversity variations of waterbird communities in China",
+      "year": 2024,
+      "venue": "Global Ecology and Conservation",
+      "authors": "Ziqi Li, Yuyu Wang, Yifei Jia, Congjun Xu, Xiaoqi Xu, Ziqi Chen, Guohuan Su, Jun Xu",
+      "url": "https://doi.org/10.1016/j.gecco.2024.e03151",
+      "cited_by_count": 3,
+      "openalex_id": "https://openalex.org/W4401626465"
+    },
+    {
+      "title": "Spatial distribution and introduction pathways of non-native freshwater fish species in China",
+      "year": 2024,
+      "venue": "Water Biology and Security",
+      "authors": "Liuxin Qiao, Chunlong Liu, Guohuan Su, Yuning Zhang, Jiayuan Xie, Min Zhang, Jun Xu",
+      "url": "https://doi.org/10.1016/j.watbs.2024.100276",
+      "cited_by_count": 3,
+      "openalex_id": "https://openalex.org/W4399813477"
+    },
+    {
+      "title": "Intra-Annual Compositions and Diversity Patterns of Waterbird Communities in China",
+      "year": 2024,
+      "venue": "SSRN Electronic Journal",
+      "authors": "Ziqi Li, Yuyu Wang, Yifei Jia, Congjun Xu, Xiaoqi Xu, Ziqi Chen, Guohuan Su, Jun Xu",
+      "url": "https://doi.org/10.2139/ssrn.4730326",
+      "cited_by_count": 0,
+      "openalex_id": "https://openalex.org/W4391922209"
+    },
+    {
+      "title": "Effects of Multiple Environmental Stressors on Zoobenthos Communities in Shallow Lakes: Evidence from a Mesocosm Experiment",
+      "year": 2023,
+      "venue": "Animals",
+      "authors": "Xiaoqi Xu, Guohuan Su, Peiyu Zhang, Tao Wang, Kangshun Zhao, Huan Zhang, Jinhe Huang, Hongxia Wang, Xianghong Kong, Jun Xu, Min Zhang",
+      "url": "https://doi.org/10.3390/ani13233722",
+      "cited_by_count": 8,
+      "openalex_id": "https://openalex.org/W4389225545"
+    },
+    {
+      "title": "Societal benefits and environmental performance of Chinese aquaculture",
+      "year": 2023,
+      "venue": "Journal of Cleaner Production",
+      "authors": "Congjun Xu, Guohuan Su, Kangshun Zhao, Xianghong Kong, Hongxia Wang, Xiaoqi Xu, Ziqi Li, Min Zhang, Jun Xu, Min Zhang, Jun Xu",
+      "url": "https://doi.org/10.1016/j.jclepro.2023.138645",
+      "cited_by_count": 22,
+      "openalex_id": "https://openalex.org/W4386373565"
+    },
+    {
+      "title": "Assessing sustainable performance of aquatic species using multiple footprints for comprehensive dietary advice",
+      "year": 2023,
+      "venue": "Journal of Cleaner Production",
+      "authors": "Congjun Xu, Guohuan Su, Kangshun Zhao, Xiaoqi Xu, Ziqi Li, Min Zhang, Jun Xu, Min Zhang, Jun Xu",
+      "url": "https://doi.org/10.1016/j.jclepro.2023.138619",
+      "cited_by_count": 1,
+      "openalex_id": "https://openalex.org/W4386295249"
+    },
+    {
+      "title": "A network-based approach to identifying correlations between phylogeny, morphological traits and occurrence of fish species in US river basins",
+      "year": 2023,
+      "venue": "PLoS ONE",
+      "authors": "Richa Tripathi, Amit Reza, Adam Mertel, Guohuan Su, Justin M. Calabrese",
+      "url": "https://doi.org/10.1371/journal.pone.0287482",
+      "cited_by_count": 1,
+      "openalex_id": "https://openalex.org/W4381839265"
+    },
+    {
+      "title": "Species invasiveness and community invasibility of North American freshwater fish fauna revealed via trait-based analysis",
+      "year": 2023,
+      "venue": "Nature Communications",
+      "authors": "Guohuan Su, Adam Mertel, Sébastien Brosse, Justin M. Calabrese",
+      "url": "https://doi.org/10.1038/s41467-023-38107-2",
+      "cited_by_count": 55,
+      "openalex_id": "https://openalex.org/W4366769605"
+    },
+    {
+      "title": "Functional diversity patterns reveal different elevations shaping Himalayan amphibian assemblages, highlighting the importance of morphologically extreme individuals",
+      "year": 2023,
+      "venue": "Ecological Indicators",
+      "authors": "Tian Zhao, Guohuan Su, Jianping Jiang, Na Li, Chunlin Zhao, Zijian Sun, Janak Raj Khatiwada",
+      "url": "https://doi.org/10.1016/j.ecolind.2023.110260",
+      "cited_by_count": 10,
+      "openalex_id": "https://openalex.org/W4366085648"
+    },
+    {
+      "title": "A network based approach to identifying correlations between phylogeny, morphological traits and occurrence information of fish Species in US river basins",
+      "year": 2023,
+      "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+      "authors": "Richa Tripathi, Amit Reza, Guohuan Su, Adam Mertel, Justin M. Calabrese",
+      "url": "https://doi.org/10.1101/2023.01.09.523236",
+      "cited_by_count": 0,
+      "openalex_id": "https://openalex.org/W4313892887"
+    },
+    {
+      "title": "Editorial: Multiple stressors and ecological response in marine fishery ecosystems",
+      "year": 2023,
+      "venue": "Frontiers in Marine Science",
+      "authors": "Guohuan Su, Jun Xu",
+      "url": "https://doi.org/10.3389/fmars.2022.1122772",
+      "cited_by_count": 1,
+      "openalex_id": "https://openalex.org/W4313495224"
+    },
+    {
+      "title": "Assessment of greenhouse gases emissions and intensity from Chinese marine aquaculture in the past three decades",
+      "year": 2022,
+      "venue": "Journal of Environmental Management",
+      "authors": "Congjun Xu, Guohuan Su, Kangshun Zhao, Huan Wang, Xiaoqi Xu, Ziqi Li, Qiang Hu, Jun Xu",
+      "url": "https://doi.org/10.1016/j.jenvman.2022.117025",
+      "cited_by_count": 33,
+      "openalex_id": "https://openalex.org/W4312130058"
+    },
+    {
+      "title": "Implications for functional diversity conservation of China’s marine fisheries",
+      "year": 2022,
+      "venue": "Frontiers in Marine Science",
+      "authors": "Kangshun Zhao, Yuhan He, Guohuan Su, Congjun Xu, Xiaoqi Xu, Min Zhang, Peiyu Zhang",
+      "url": "https://doi.org/10.3389/fmars.2022.970218",
+      "cited_by_count": 7,
+      "openalex_id": "https://openalex.org/W4297011032"
+    },
+    {
+      "title": "Current status of greenhouse gas emissions from aquaculture in China",
+      "year": 2022,
+      "venue": "Water Biology and Security",
+      "authors": "Congjun Xu, Guohuan Su, Kangshun Zhao, Xiaoqi Xu, Ziqi Li, Qiang Hu, Ying Xue, Jun Xu",
+      "url": "https://doi.org/10.1016/j.watbs.2022.100041",
+      "cited_by_count": 46,
+      "openalex_id": "https://openalex.org/W4280645990"
+    },
+    {
+      "title": "Biogeographic Regionalization: Freshwater",
+      "year": 2022,
+      "venue": "Elsevier eBooks",
+      "authors": "Murilo S. Dias, Anthi Oikonomou, Guohuan Su",
+      "url": "https://doi.org/10.1016/b978-0-12-822562-2.00044-x",
+      "cited_by_count": 2,
+      "openalex_id": "https://openalex.org/W4226051720"
+    },
+    {
+      "title": "Species invasiveness and community invasibility of US freshwater fish fauna revealed via trait-based analysis",
+      "year": 2022,
+      "venue": "bioRxiv (Cold Spring Harbor Laboratory)",
+      "authors": "Guohuan Su, Adam Mertel, Sébastien Brosse, Justin M. Calabrese",
+      "url": "https://doi.org/10.1101/2022.03.04.481515",
+      "cited_by_count": 3,
+      "openalex_id": "https://openalex.org/W4220763587"
+    },
+    {
+      "title": "Contemporary environment and historical legacy explain functional diversity of freshwater fishes in the world rivers",
+      "year": 2022,
+      "venue": "Global Ecology and Biogeography",
+      "authors": "Guohuan Su, Pablo A. Tedesco, Aurèle Toussaint, Sébastien Villéger, Sébastien Brosse",
+      "url": "https://doi.org/10.1111/geb.13455",
+      "cited_by_count": 29,
+      "openalex_id": "https://openalex.org/W4212929950"
+    },
+    {
+      "title": "FISHMORPH: A global database on morphological traits of freshwater fishes",
+      "year": 2021,
+      "venue": "Global Ecology and Biogeography",
+      "authors": "Sébastien Brosse, Nicolas Charpin, Guohuan Su, Aurèle Toussaint, Guido A. Herrera‐R, Pablo A. Tedesco, Sébastien Villéger",
+      "url": "https://doi.org/10.1111/geb.13395",
+      "cited_by_count": 114,
+      "openalex_id": "https://openalex.org/W3198940744"
+    },
+    {
+      "title": "Human impacts on global freshwater fish biodiversity",
+      "year": 2021,
+      "venue": "Science",
+      "authors": "Guohuan Su, Maxime Logez, Jun Xu, Shengli Tao, Sébastien Villéger, Sébastien Brosse",
+      "url": "https://doi.org/10.1126/science.abd3369",
+      "cited_by_count": 573,
+      "openalex_id": "https://openalex.org/W3133061341"
+    },
+    {
+      "title": "FISHMORPH_Database",
+      "year": 2021,
+      "venue": "Figshare",
+      "authors": "Brosse Sebastien, Nicolas Charpin, Aurèle Toussaint, Guido A. Herrera‐R, Guohuan Su, Pablo A. Tedesco, Sébastien Villéger",
+      "url": "https://doi.org/10.6084/m9.figshare.14891412",
+      "cited_by_count": 0,
+      "openalex_id": "https://openalex.org/W4394387499"
+    },
+    {
+      "title": "Mapping global biodiversity, profiling invasive species and developing a global index of biodiversity change based on taxonomic, functional and phylogenetic facets of freshwater fish biodiversity",
+      "year": 2020,
+      "venue": "HAL (Le Centre pour la Communication Scientifique Directe)",
+      "authors": "Guohuan Su",
+      "url": "https://theses.hal.science/tel-03332349",
+      "cited_by_count": 0,
+      "openalex_id": "https://openalex.org/W3198224199"
+    },
+    {
+      "title": "Morphological sorting of introduced freshwater fish species within and between donor realms",
+      "year": 2020,
+      "venue": "Global Ecology and Biogeography",
+      "authors": "Guohuan Su, Sébastien Villéger, Sébastien Brosse",
+      "url": "https://doi.org/10.1111/geb.13054",
+      "cited_by_count": 22,
+      "openalex_id": "https://openalex.org/W3005751824"
+    },
+    {
+      "title": "Cross‐taxon congruence of multiple diversity facets of freshwater assemblages is determined by large‐scale processes across China",
+      "year": 2019,
+      "venue": "Freshwater Biology",
+      "authors": "Jun Xu, Jorge García Molinos, Guohuan Su, Shin‐ichiro S. Matsuzaki, Munemitsu Akasaka, Huan Zhang, Jani Heino",
+      "url": "https://doi.org/10.1111/fwb.13322",
+      "cited_by_count": 18,
+      "openalex_id": "https://openalex.org/W2957290096"
+    },
+    {
+      "title": "Spatially Structured Environmental Variation Plays a Prominent Role on the Biodiversity of Freshwater Macrophytes Across China",
+      "year": 2019,
+      "venue": "Frontiers in Plant Science",
+      "authors": "Min Zhang, Jorge García Molinos, Guohuan Su, Huan Zhang, Jun Xu",
+      "url": "https://doi.org/10.3389/fpls.2019.00161",
+      "cited_by_count": 16,
+      "openalex_id": "https://openalex.org/W2916363113"
+    },
+    {
+      "title": "Morphological diversity of freshwater fishes differs between realms, but morphologically extreme species are widespread",
+      "year": 2018,
+      "venue": "Global Ecology and Biogeography",
+      "authors": "Guohuan Su, Sébastien Villéger, Sébastien Brosse",
+      "url": "https://doi.org/10.1111/geb.12843",
+      "cited_by_count": 72,
+      "openalex_id": "https://openalex.org/W2901599557"
+    },
+    {
+      "title": "Diverse dietary strategy of lake anchovy Coilia ectenes taihuensis in lakes with different trophic status",
+      "year": 2015,
+      "venue": "Journal of Ichthyology",
+      "authors": "Yuyi Sha, Guohuan Su, Peilian Zhang, Hanchi Zhang, Jun Xu",
+      "url": "https://doi.org/10.1134/s0032945215060193",
+      "cited_by_count": 8,
+      "openalex_id": "https://openalex.org/W2251041061"
+    },
+    {
+      "title": "Human impacts on functional and taxonomic homogenization of plateau fish assemblages in Yunnan, China",
+      "year": 2015,
+      "venue": "Global Ecology and Conservation",
+      "authors": "Guohuan Su, Jun Xu, Munemitsu Akasaka, Jorge García Molinos, Shin‐ichiro S. Matsuzaki",
+      "url": "https://doi.org/10.1016/j.gecco.2015.09.002",
+      "cited_by_count": 29,
+      "openalex_id": "https://openalex.org/W2194217772"
+    },
+    {
+      "title": "Complimentary analysis of metacommunity nestedness and diversity partitioning highlights the need for a holistic conservation strategy for highland lake fish assemblages",
+      "year": 2014,
+      "venue": "Global Ecology and Conservation",
+      "authors": "Jun Xu, Guohuan Su, Xiong Ying, Munemitsu Akasaka, Jorge García Molinos, Shin‐ichiro S. Matsuzaki, Min Zhang",
+      "url": "https://doi.org/10.1016/j.gecco.2014.12.004",
+      "cited_by_count": 13,
+      "openalex_id": "https://openalex.org/W1965657537"
+    },
+    {
+      "title": "Impacts of habitat environment on trophic niches of a local population: a case study of yellow catfish",
+      "year": 2014,
+      "venue": "Acta Ecologica Sinica",
+      "authors": "沙永翠 SHA Yongcui, 张培育 ZHANG Peiyu, 张欢 ZHANG Huan, Guohuan Su, 徐军 XU Jun",
+      "url": "https://doi.org/10.5846/stxb201305121024",
+      "cited_by_count": 2,
+      "openalex_id": "https://openalex.org/W2327532857"
+    }
+  ]
+}
