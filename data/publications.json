@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-27",
+  "updated_at": "2026-08-03",
   "total_works": 45,
   "source": "Google Scholar",
   "scholar_id": "uqPekUQAAAAJ",
@@ -51,15 +51,15 @@
       "venue": "Science Advances 11 (32), eadw4347, 2025",
       "authors": "M Xu, M Fang, AM Usoof, NE Mandrak, C Chu, H Qian, Y Cao, C Liu, ...",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:PR6Y55bgFSsC",
-      "cited_by_count": 16
+      "cited_by_count": 17
     },
     {
-      "title": "Global Diversity Patterns and Threats of Cave Fish",
+      "title": "Global diversity patterns and threats of cave fish",
       "year": 2025,
       "venue": "Global Ecology and Biogeography 34 (11), e70160, 2025",
       "authors": "X Bai, P Zhang, L Gan, S Brosse, BR Shipley, G Grenouillet, T Ju, Y Zhao, ...",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:uLbwQdceFCQC",
-      "cited_by_count": 5
+      "cited_by_count": 4
     },
     {
       "title": "Environmental and evolutionary factors jointly shape life-history trait diversity of terrestrial vertebrates across China",
@@ -155,7 +155,7 @@
       "venue": "Ecological Indicators 150, 110260, 2023",
       "authors": "T Zhao, G Su, J Jiang, N Li, C Zhao, Z Sun, JR Khatiwada",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:p2g8aNsByqUC",
-      "cited_by_count": 11
+      "cited_by_count": 10
     },
     {
       "title": "Effects of multiple environmental stressors on zoobenthos communities in shallow lakes: Evidence from a mesocosm experiment",
@@ -163,7 +163,7 @@
       "venue": "Animals 13 (23), 3722, 2023",
       "authors": "X Xu, G Su, P Zhang, T Wang, K Zhao, H Zhang, J Huang, H Wang, ...",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:738O_yMBCRsC",
-      "cited_by_count": 8
+      "cited_by_count": 9
     },
     {
       "title": "Assessing sustainable performance of aquatic species using multiple footprints for comprehensive dietary advice",
@@ -198,12 +198,20 @@
       "cited_by_count": 1
     },
     {
+      "title": "Publications Repository-Helmholtz-Zentrum Dresden-Rossendorf",
+      "year": 2023,
+      "venue": "The Astrophysical Journal 944, 48, 2023",
+      "authors": "GM Horstmann, G Mamatsashvili, A Giesecke, T Zaqarashvili, F Stefani",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:7T2F9Uy0os0C",
+      "cited_by_count": 0
+    },
+    {
       "title": "Current status of greenhouse gas emissions from aquaculture in China",
       "year": 2022,
       "venue": "Water Biology and Security 1 (3), 100041, 2022",
       "authors": "C Xu, G Su, K Zhao, X Xu, Z Li, Q Hu, Y Xue, J Xu",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:xtRiw3GOFMkC",
-      "cited_by_count": 66
+      "cited_by_count": 64
     },
     {
       "title": "Contemporary environment and historical legacy explain functional diversity of freshwater fishes in the world rivers",
@@ -230,20 +238,12 @@
       "cited_by_count": 6
     },
     {
-      "title": "Publications Repository-Helmholtz-Zentrum Dresden-Rossendorf",
-      "year": 2022,
-      "venue": "Small 18 (17), 2201228, 2022",
-      "authors": "I Veremchuk, P Makushko, N Hedrich, Y Zabila, T Kosub, MO Liedke, ...",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:7T2F9Uy0os0C",
-      "cited_by_count": 0
-    },
-    {
       "title": "Human impacts on global freshwater fish biodiversity",
       "year": 2021,
       "venue": "Science 371 (6531), 835-838, 2021",
       "authors": "G Su, M Logez, J Xu, S Tao, S Villéger, S Brosse",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:D03iK_w7-QYC",
-      "cited_by_count": 714
+      "cited_by_count": 707
     },
     {
       "title": "FISHMORPH: A global database on morphological traits of freshwater fishes",
@@ -251,7 +251,7 @@
       "venue": "Global Ecology and Biogeography 30 (12), 2330-2336, 2021",
       "authors": "S Brosse, N Charpin, G Su, A Toussaint, GA Herrera‐r, PA Tedesco, ...",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:b0M2c_1WBrUC",
-      "cited_by_count": 137
+      "cited_by_count": 140
     },
     {
       "title": "Morphological sorting of introduced freshwater fish species within and between donor realms",
@@ -259,7 +259,7 @@
       "venue": "Global Ecology and Biogeography 29 (5), 803-813, 2020",
       "authors": "G Su, S Villéger, S Brosse",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:_FxGoFyzp5QC",
-      "cited_by_count": 21
+      "cited_by_count": 22
     },
     {
       "title": "Mapping global biodiversity, profiling invasive species and developing a global index of biodiversity change based on taxonomic, functional and phylogenetic facets of …",
@@ -283,7 +283,7 @@
       "venue": "Global Ecology and Biogeography 28 (2), 211-221, 2019",
       "authors": "G Su, S Villéger, S Brosse",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:Tyk-4Ss8FVUC",
-      "cited_by_count": 87
+      "cited_by_count": 88
     },
     {
       "title": "Spatially structured environmental variation plays a prominent role on the biodiversity of freshwater macrophytes across China",
@@ -307,7 +307,7 @@
       "venue": "Global Ecology and Conservation 4, 470-478, 2015",
       "authors": "G Su, J Xu, M Akasaka, JG Molinos, SS Matsuzaki",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:qjMakFHDy7sC",
-      "cited_by_count": 30
+      "cited_by_count": 29
     },
     {
       "title": "Complimentary analysis of metacommunity nestedness and diversity partitioning highlights the need for a holistic conservation strategy for highland lake fish assemblages",
@@ -315,7 +315,7 @@
       "venue": "Global Ecology and Conservation 3, 288-296, 2015",
       "authors": "J Xu, G Su, Y Xiong, M Akasaka, JG Molinos, SM Shin-ichiro, M Zhang",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:2osOgNQ5qMEC",
-      "cited_by_count": 18
+      "cited_by_count": 17
     },
     {
       "title": "栖息地环境对种群营养生态位的影响——以黄颡鱼为例",
@@ -323,7 +323,7 @@
       "venue": "生态学报 35 (5), 1321-1328, 2015",
       "authors": "沙永翠， 张培育， 张欢， 苏国欢， 徐军",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:pyW8ca7W8N0C",
-      "cited_by_count": 17
+      "cited_by_count": 13
     },
     {
       "title": "Diverse dietary strategy of lake anchovy Coilia ectenes taihuensis in lakes with different trophic status",
@@ -331,7 +331,7 @@
       "venue": "Journal of ichthyology 55 (6), 866-873, 2015",
       "authors": "YC Sha, GH Su, PY Zhang, H Zhang, J Xu",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:zYLM7Y9cAGgC",
-      "cited_by_count": 11
+      "cited_by_count": 9
     },
     {
       "title": "鱼类形态特征与营养级位置之间关系初探",
@@ -339,7 +339,7 @@
       "venue": "湖泊科学 27 (3), 466-474, 2015",
       "authors": "熊鹰， 张敏， 张欢， 苏国欢， 沙泳翠， 徐军",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:f2IySw72cVMC",
-      "cited_by_count": 8
+      "cited_by_count": 7
     },
     {
       "title": "大坝截流前后金沙江观音岩水电站鱼类群落功能多样性的变化",
@@ -347,7 +347,7 @@
       "venue": "长江流域资源与环境 24 (6), 965-970, 2015",
       "authors": "苏国欢， 沙泳翠， 熊鹰， 张培育， 徐军",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:UeHWp8X0CEIC",
-      "cited_by_count": 7
+      "cited_by_count": 5
     },
     {
       "title": "Intra-Annual Compositions and Diversity Patterns of Waterbird Communities in China",
