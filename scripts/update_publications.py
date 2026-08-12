@@ -16,6 +16,13 @@ PROFILE = f"https://scholar.google.com/citations?user={SCHOLAR_ID}&hl=en&pagesiz
 PDF_DIR = ROOT / "pdf"
 PDF_OVERRIDES = {
     "Species invasiveness and community invasibility of North American freshwater fish fauna revealed via trait-based analysis": "Su 2023 Species-invasiveness and community.pdf",
+    "Mapping global biodiversity, profiling invasive species and developing a global index of biodiversity change based on taxonomic, functional and phylogenetic facets of …": "2020-mapping-global-biodiversity-doctoral-thesis.pdf",
+    "Cartographie de la biodiversité mondiale, profilage des espèces envahissantes et élaboration d'un indice global du changement de la biodiversité basé sur les facettes …": "2020-mapping-global-biodiversity-doctoral-thesis.pdf",
+}
+EXCLUDED_TITLES = {
+    # This is the name of a repository page accidentally indexed as a Scholar
+    # item, not one of Guohuan Su's publications.
+    "Publications Repository-Helmholtz-Zentrum Dresden-Rossendorf",
 }
 
 
@@ -35,10 +42,10 @@ def match_pdfs(publications):
     unused = set(files)
     for publication in publications:
         override = PDF_OVERRIDES.get(publication["title"])
-        if override and PDF_DIR / override in unused:
+        if override and (PDF_DIR / override).exists():
             path = PDF_DIR / override
             publication["pdf_url"] = "/pdf/" + urllib.parse.quote(path.name)
-            unused.remove(path)
+            unused.discard(path)
             continue
         title = normalize_title(publication["title"])
         ranked = sorted(((SequenceMatcher(None, title, normalize_title(path.stem)).ratio(), path) for path in unused), key=lambda item: item[0], reverse=True)
@@ -91,6 +98,7 @@ if not works:
 # Undated Scholar entries are often incomplete working records. Keep the public
 # website limited to publications with a confirmed year.
 works = [work for work in works if work["year"] is not None]
+works = [work for work in works if work["title"] not in EXCLUDED_TITLES]
 
 # Scholar profiles default to citation-count order; the website is easier to scan
 # when the newest work appears first while retaining citation order within a year.

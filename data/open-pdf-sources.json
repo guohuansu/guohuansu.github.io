@@ -1,0 +1,269 @@
+[
+  {
+    "title": "Human impacts on fish biodiversity in the Yangtze River Basin: a multidimensional assessment using the Cumulative Change in Biodiversity Facets (CCBF) index",
+    "openalex_title": "Human impacts on fish biodiversity in the Yangtze River Basin: a multidimensional assessment using the Cumulative Change in Biodiversity Facets (CCBF) index",
+    "title_score": 1.0,
+    "doi": "https://doi.org/10.1007/s11160-026-10074-z",
+    "openalex_id": "https://openalex.org/W7167845721",
+    "candidates": [],
+    "status": "no_reusable_pdf"
+  },
+  {
+    "title": "Differential controls of warming and phosphorus enrichment on CO2, CH4, and N2O emissions in shallow lake mesocosms",
+    "openalex_title": "Differential controls of warming and phosphorus enrichment on CO2, CH4, and N2O emissions in shallow lake mesocosms",
+    "title_score": 1.0,
+    "doi": "https://doi.org/10.1016/j.jhydrol.2026.136152",
+    "openalex_id": "https://openalex.org/W7172389793",
+    "candidates": [],
+    "status": "no_reusable_pdf"
+  },
+  {
+    "title": "Phytoplankton dominance alters basal energy pathways and food web structure in eutrophic shallow lakes",
+    "status": "no_metadata_match"
+  },
+  {
+    "title": "YZFishDB: A curated DNA reference database for the fishes of the Yangtze River Basin",
+    "openalex_title": "YZFishDB: A curated DNA reference database for the fishes of the Yangtze River Basin",
+    "title_score": 1.0,
+    "doi": "https://doi.org/10.1016/j.ade.2026.100009",
+    "openalex_id": "https://openalex.org/W7164209716",
+    "candidates": [],
+    "status": "no_reusable_pdf"
+  },
+  {
+    "title": "Bat Migration Intensifies Cave Fish Richness Loss Under Climate Change in China",
+    "openalex_title": "Bat Migration Intensifies Cave Fish Richness Loss Under Climate Change in China",
+    "title_score": 1.0,
+    "doi": "https://doi.org/10.1111/ddi.70148",
+    "openalex_id": "https://openalex.org/W7126062475",
+    "candidates": [
+      {
+        "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/ddi.70148",
+        "license": "cc-by",
+        "version": "publishedVersion",
+        "source": "Diversity and Distributions",
+        "download": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/ddi.70148",
+        "license": "cc-by",
+        "version": "publishedVersion",
+        "source": "Crossref publisher link",
+        "download": "HTTP Error 403: Forbidden"
+      }
+    ],
+    "status": "candidate_found"
+  },
+  {
+    "title": "Temperature regimes shape similarity of life-history strategies between native and non-native freshwater fishes",
+    "status": "no_metadata_match"
+  },
+  {
+    "title": "Ecological similarity governs non-native fish establishment while human pressure and native diversity shape invasion richness",
+    "openalex_title": "Ecological similarity governs non-native fish establishment while human pressure and native diversity shape invasion richness",
+    "title_score": 1.0,
+    "doi": "https://doi.org/10.1126/sciadv.adw4347",
+    "openalex_id": "https://openalex.org/W4413054987",
+    "candidates": [
+      {
+        "url": "https://www.science.org/doi/pdf/10.1126/sciadv.adw4347?download=true",
+        "license": "cc-by-nc",
+        "version": "publishedVersion",
+        "source": "Science Advances",
+        "download": "HTTP Error 403: Forbidden"
+      }
+    ],
+    "status": "candidate_found"
+  },
+  {
+    "title": "Global diversity patterns and threats of cave fish",
+    "openalex_title": "Global Diversity Patterns and Threats of Cave Fish",
+    "title_score": 1.0,
+    "doi": "https://doi.org/10.1111/geb.70160",
+    "openalex_id": "https://openalex.org/W7106488962",
+    "candidates": [],
+    "status": "no_reusable_pdf"
+  },
+  {
+    "title": "Environmental and evolutionary factors jointly shape life-history trait diversity of terrestrial vertebrates across China",
+    "status": "no_metadata_match"
+  },
+  {
+    "title": "Global Patterns and Determinants of Multiple Facets of Freshwater Fishes Beta Diversity",
+    "openalex_title": "Global Patterns and Determinants of Multiple Facets of Freshwater Fishes Beta Diversity",
+    "title_score": 1.0,
+    "doi": "https://doi.org/10.1111/geb.70181",
+    "openalex_id": "https://openalex.org/W4417311410",
+    "candidates": [],
+    "status": "no_reusable_pdf"
+  },
+  {
+    "title": "Terrestrial protected areas stabilize the inland habitats of diadromous fishes under climate change",
+    "openalex_title": "Terrestrial protected areas stabilize the inland habitats of diadromous fishes under climate change",
+    "title_score": 1.0,
+    "doi": "https://doi.org/10.2139/ssrn.5450322",
+    "openalex_id": "https://openalex.org/W4414038549",
+    "candidates": [],
+    "status": "no_reusable_pdf"
+  },
+  {
+    "title": "Impacts of nonnative fishes on local contributions to beta diversity in United States freshwater fishes",
+    "openalex_title": "Impacts of nonnative fishes on local contributions to beta diversity in United States freshwater fishes",
+    "title_score": 1.0,
+    "doi": "https://doi.org/10.1016/j.baae.2025.12.012",
+    "openalex_id": "https://openalex.org/W7117475989",
+    "candidates": [],
+    "status": "no_reusable_pdf"
+  },
+  {
+    "title": "Spatial distribution and introduction pathways of non-native freshwater fish species in China",
+    "openalex_title": "Spatial distribution and introduction pathways of non-native freshwater fish species in China",
+    "title_score": 1.0,
+    "doi": "https://doi.org/10.1016/j.watbs.2024.100276",
+    "openalex_id": "https://openalex.org/W4399813477",
+    "candidates": [],
+    "status": "no_reusable_pdf"
+  },
+  {
+    "title": "Intra-annual compositions and diversity variations of waterbird communities in China",
+    "openalex_title": "Intra-annual compositions and diversity variations of waterbird communities in China",
+    "title_score": 1.0,
+    "doi": "https://doi.org/10.1016/j.gecco.2024.e03151",
+    "openalex_id": "https://openalex.org/W4401626465",
+    "candidates": [],
+    "status": "no_reusable_pdf"
+  },
+  {
+    "title": "Assessment of greenhouse gases emissions and intensity from Chinese marine aquaculture in the past three decades",
+    "openalex_title": "Assessment of greenhouse gases emissions and intensity from Chinese marine aquaculture in the past three decades",
+    "title_score": 1.0,
+    "doi": "https://doi.org/10.1016/j.jenvman.2022.117025",
+    "openalex_id": "https://openalex.org/W4312130058",
+    "candidates": [],
+    "status": "no_reusable_pdf"
+  },
+  {
+    "title": "Societal benefits and environmental performance of Chinese aquaculture",
+    "openalex_title": "Societal benefits and environmental performance of Chinese aquaculture",
+    "title_score": 1.0,
+    "doi": "https://doi.org/10.1016/j.jclepro.2023.138645",
+    "openalex_id": "https://openalex.org/W4386373565",
+    "candidates": [],
+    "status": "no_reusable_pdf"
+  },
+  {
+    "title": "Functional diversity patterns reveal different elevations shaping Himalayan amphibian assemblages, highlighting the importance of morphologically extreme individuals",
+    "openalex_title": "Functional diversity patterns reveal different elevations shaping Himalayan amphibian assemblages, highlighting the importance of morphologically extreme individuals",
+    "title_score": 1.0,
+    "doi": "https://doi.org/10.1016/j.ecolind.2023.110260",
+    "openalex_id": "https://openalex.org/W4366085648",
+    "candidates": [],
+    "status": "no_reusable_pdf"
+  },
+  {
+    "title": "Effects of multiple environmental stressors on zoobenthos communities in shallow lakes: Evidence from a mesocosm experiment",
+    "openalex_title": "Effects of Multiple Environmental Stressors on Zoobenthos Communities in Shallow Lakes: Evidence from a Mesocosm Experiment",
+    "title_score": 1.0,
+    "doi": "https://doi.org/10.3390/ani13233722",
+    "openalex_id": "https://openalex.org/W4389225545",
+    "candidates": [
+      {
+        "url": "https://www.mdpi.com/2076-2615/13/23/3722/pdf?version=1701419806",
+        "license": "cc-by",
+        "version": "publishedVersion",
+        "source": "Animals",
+        "download": "HTTP Error 403: Forbidden"
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10705673/pdf/animals-13-03722.pdf",
+        "license": "cc-by",
+        "version": "submittedVersion",
+        "source": "PubMed Central",
+        "download": "file too small"
+      }
+    ],
+    "status": "candidate_found"
+  },
+  {
+    "title": "Assessing sustainable performance of aquatic species using multiple footprints for comprehensive dietary advice",
+    "openalex_title": "Assessing sustainable performance of aquatic species using multiple footprints for comprehensive dietary advice",
+    "title_score": 1.0,
+    "doi": "https://doi.org/10.1016/j.jclepro.2023.138619",
+    "openalex_id": "https://openalex.org/W4386295249",
+    "candidates": [],
+    "status": "no_reusable_pdf"
+  },
+  {
+    "title": "Publications Repository-Helmholtz-Zentrum Dresden-Rossendorf",
+    "status": "no_metadata_match"
+  },
+  {
+    "title": "Current status of greenhouse gas emissions from aquaculture in China",
+    "openalex_title": "Current status of greenhouse gas emissions from aquaculture in China",
+    "title_score": 1.0,
+    "doi": "https://doi.org/10.1016/j.watbs.2022.100041",
+    "openalex_id": "https://openalex.org/W4280645990",
+    "candidates": [
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S2772735122000555/pdf",
+        "license": "cc-by-nc-nd",
+        "version": "publishedVersion",
+        "source": "Water Biology and Security",
+        "download": "HTTP Error 403: Forbidden"
+      }
+    ],
+    "status": "candidate_found"
+  },
+  {
+    "title": "Implications for functional diversity conservation of China’s marine fisheries",
+    "status": "no_metadata_match"
+  },
+  {
+    "title": "Biogeographic Regionalization: Freshwater",
+    "openalex_title": "Biogeographic Regionalization: Freshwater",
+    "title_score": 1.0,
+    "doi": "https://doi.org/10.1016/b978-0-12-822562-2.00044-x",
+    "openalex_id": "https://openalex.org/W4226051720",
+    "candidates": [],
+    "status": "no_reusable_pdf"
+  },
+  {
+    "title": "Mapping global biodiversity, profiling invasive species and developing a global index of biodiversity change based on taxonomic, functional and phylogenetic facets of …",
+    "status": "no_metadata_match"
+  },
+  {
+    "title": "Cartographie de la biodiversité mondiale, profilage des espèces envahissantes et élaboration d'un indice global du changement de la biodiversité basé sur les facettes …",
+    "status": "no_metadata_match"
+  },
+  {
+    "title": "栖息地环境对种群营养生态位的影响——以黄颡鱼为例",
+    "openalex_title": "上海河道生态修复对生物多样性的影响机制研究",
+    "title_score": 1.0,
+    "doi": "https://doi.org/10.37155/2717-5251-0805-6",
+    "openalex_id": "https://openalex.org/W7162556140",
+    "candidates": [
+      {
+        "url": "http://ojs.omniscient.sg/index.php/tawcep/article/download/76692/75064",
+        "license": "cc-by-nc",
+        "version": "publishedVersion",
+        "source": "水利电力技术与应用",
+        "download": "application/pdf",
+        "validation": "title-word overlap 0.00"
+      }
+    ],
+    "status": "candidate_found"
+  },
+  {
+    "title": "鱼类形态特征与营养级位置之间关系初探",
+    "openalex_title": "计算模拟方法提高深时食物网稳定性演变的时间分辨率: 以煤山剖面二叠纪‒三叠纪生态记录为例",
+    "title_score": 1.0,
+    "doi": "https://doi.org/10.3799/dqkx.2025.022",
+    "openalex_id": "https://openalex.org/W4407806145",
+    "candidates": [],
+    "status": "no_reusable_pdf"
+  },
+  {
+    "title": "大坝截流前后金沙江观音岩水电站鱼类群落功能多样性的变化",
+    "status": "no_metadata_match"
+  }
+]
