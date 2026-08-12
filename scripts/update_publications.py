@@ -88,6 +88,10 @@ for row in rows:
 if not works:
     raise RuntimeError("Google Scholar rows could not be parsed; existing data was preserved")
 
+# Undated Scholar entries are often incomplete working records. Keep the public
+# website limited to publications with a confirmed year.
+works = [work for work in works if work["year"] is not None]
+
 # Scholar profiles default to citation-count order; the website is easier to scan
 # when the newest work appears first while retaining citation order within a year.
 works.sort(key=lambda work: (work["year"] or 0, work["cited_by_count"]), reverse=True)

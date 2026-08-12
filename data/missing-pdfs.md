@@ -35,5 +35,3 @@ Generated 2026-08-12. Add legally shareable files to `pdf/` and rerun the update
 - 2015 — 栖息地环境对种群营养生态位的影响——以黄颡鱼为例
 - 2015 — 鱼类形态特征与营养级位置之间关系初探
 - 2015 — 大坝截流前后金沙江观音岩水电站鱼类群落功能多样性的变化
-- n.d. — Intra-Annual Compositions and Diversity Patterns of Waterbird Communities in China
-- n.d. — Modeling fish species diversity in river networks
