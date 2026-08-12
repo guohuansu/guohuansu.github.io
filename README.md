@@ -8,6 +8,10 @@ A responsive static academic website hosted by GitHub Pages.
 
 Google Scholar is the authoritative publication source. ResearchGate and ORCID remain linked as complementary profiles.
 
+## Adding downloadable PDFs
+
+Place author manuscripts or other legally shareable full texts in `pdf/`. Use a filename close to the publication title, then run `python scripts/update_publications.py`. The updater attaches unambiguous matches and writes `data/missing-pdfs.md` for everything still missing. PDF files are never deleted by the updater.
+
 ## Local preview
 
 Run a static web server from the repository root, for example `python -m http.server 8000`, then open `http://localhost:8000`.

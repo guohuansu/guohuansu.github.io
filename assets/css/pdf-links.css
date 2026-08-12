@@ -1,0 +1,19 @@
+.publication-links {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.publication a.pdf-link {
+  background: var(--teal);
+  border-color: var(--teal);
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .publication-links {
+    grid-column: 2;
+    justify-content: flex-start;
+  }
+}
