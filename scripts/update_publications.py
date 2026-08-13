@@ -18,6 +18,11 @@ PDF_OVERRIDES = {
     "Species invasiveness and community invasibility of North American freshwater fish fauna revealed via trait-based analysis": "Su 2023 Species-invasiveness and community.pdf",
     "Mapping global biodiversity, profiling invasive species and developing a global index of biodiversity change based on taxonomic, functional and phylogenetic facets of …": "2020-mapping-global-biodiversity-doctoral-thesis.pdf",
     "Cartographie de la biodiversité mondiale, profilage des espèces envahissantes et élaboration d'un indice global du changement de la biodiversité basé sur les facettes …": "2020-mapping-global-biodiversity-doctoral-thesis.pdf",
+    "栖息地环境对种群营养生态位的影响——以黄颡鱼为例": "2015-habitat-environment-yellow-catfish-trophic-niches.pdf",
+    "鱼类形态特征与营养级位置之间关系初探": "2015-fish-morphology-trophic-position.pdf",
+    "大坝截流前后金沙江观音岩水电站鱼类群落功能多样性的变化": "2015-guanyinyan-dam-fish-functional-diversity.pdf",
+    "Functional diversity patterns reveal different elevations shaping Himalayan amphibian assemblages, highlighting the importance of morphologically extreme individuals": "2023-functional-diversity-himalayan-amphibian-assemblages.pdf",
+    "Impacts of nonnative fishes on local contributions to beta diversity in United States freshwater fishes": "2025-impacts-of-nonnative-fishes-on-local-contributions-to-beta-diversity-in-united-states-freshwater-fishes.pdf",
 }
 EXCLUDED_TITLES = {
     # This is the name of a repository page accidentally indexed as a Scholar
@@ -39,7 +44,10 @@ def normalize_title(value):
 
 def match_pdfs(publications):
     files = sorted(PDF_DIR.glob("*.pdf")) if PDF_DIR.exists() else []
-    unused = set(files)
+    # Keep explicitly mapped files out of the fuzzy candidate pool. Otherwise a
+    # similar title appearing earlier in Scholar can consume the reserved PDF.
+    reserved = {PDF_DIR / name for name in PDF_OVERRIDES.values() if (PDF_DIR / name).exists()}
+    unused = set(files) - reserved
     for publication in publications:
         override = PDF_OVERRIDES.get(publication["title"])
         if override and (PDF_DIR / override).exists():

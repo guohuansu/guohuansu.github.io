@@ -4,6 +4,7 @@ Generated 2026-08-13. Add legally shareable files to `pdf/` and rerun the update
 
 - 2026 — Human impacts on fish biodiversity in the Yangtze River Basin: a multidimensional assessment using the Cumulative Change in Biodiversity Facets (CCBF) index
 - 2026 — Differential controls of warming and phosphorus enrichment on CO2, CH4, and N2O emissions in shallow lake mesocosms
+- 2026 — Spatial Patterns and Determinants of Multidimensional Beta Diversity in the United States Freshwater Fishes
 - 2026 — Phytoplankton dominance alters basal energy pathways and food web structure in eutrophic shallow lakes
 - 2025 — Global diversity patterns and threats of cave fish
 - 2025 — Global Patterns and Determinants of Multiple Facets of Freshwater Fishes Beta Diversity
@@ -11,10 +12,6 @@ Generated 2026-08-13. Add legally shareable files to `pdf/` and rerun the update
 - 2024 — Intra-annual compositions and diversity variations of waterbird communities in China
 - 2023 — Assessment of greenhouse gases emissions and intensity from Chinese marine aquaculture in the past three decades
 - 2023 — Societal benefits and environmental performance of Chinese aquaculture
-- 2023 — Functional diversity patterns reveal different elevations shaping Himalayan amphibian assemblages, highlighting the importance of morphologically extreme individuals
 - 2023 — Assessing sustainable performance of aquatic species using multiple footprints for comprehensive dietary advice
 - 2022 — Current status of greenhouse gas emissions from aquaculture in China
 - 2022 — Biogeographic Regionalization: Freshwater
-- 2015 — 栖息地环境对种群营养生态位的影响——以黄颡鱼为例
-- 2015 — 鱼类形态特征与营养级位置之间关系初探
-- 2015 — 大坝截流前后金沙江观音岩水电站鱼类群落功能多样性的变化

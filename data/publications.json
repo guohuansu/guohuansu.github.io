@@ -1,10 +1,10 @@
 {
   "updated_at": "2026-08-13",
-  "total_works": 43,
+  "total_works": 44,
   "source": "Google Scholar",
   "scholar_id": "uqPekUQAAAAJ",
   "profile_url": "https://scholar.google.com/citations?user=uqPekUQAAAAJ&hl=en&pagesize=100",
-  "pdf_count": 27,
+  "pdf_count": 31,
   "works": [
     {
       "title": "Human impacts on fish biodiversity in the Yangtze River Basin: a multidimensional assessment using the Cumulative Change in Biodiversity Facets (CCBF) index",
@@ -21,6 +21,15 @@
       "venue": "Journal of Hydrology, 136152, 2026",
       "authors": "X Xu, B Hu, D Yuan, G Su, L Wang, Z Chen, K Zhao, T Wang, J Xu, ...",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:tzM49s52ZIMC",
+      "cited_by_count": 0,
+      "pdf_url": null
+    },
+    {
+      "title": "Spatial Patterns and Determinants of Multidimensional Beta Diversity in the United States Freshwater Fishes",
+      "year": 2026,
+      "venue": "Diversity and Distributions 32 (8), e70250, 2026",
+      "authors": "C Xu, H Xue, J Li, Y Li, C Du, N Liu, J Xu, W Zhang, T Dai, G Su",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:2KloaMYe4IUC",
       "cited_by_count": 0,
       "pdf_url": null
     },
@@ -79,6 +88,15 @@
       "pdf_url": null
     },
     {
+      "title": "Global Patterns and Determinants of Multiple Facets of Freshwater Fishes Beta Diversity",
+      "year": 2025,
+      "venue": "Global Ecology and Biogeography 34 (12), e70181, 2025",
+      "authors": "Z Chen, CJ Xu, S Brosse, A Toussaint, J Xu, G Su",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:W5xh706n7nkC",
+      "cited_by_count": 3,
+      "pdf_url": null
+    },
+    {
       "title": "Environmental and evolutionary factors jointly shape life-history trait diversity of terrestrial vertebrates across China",
       "year": 2025,
       "venue": "Zoological Research 46 (5), 983, 2025",
@@ -86,15 +104,6 @@
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:hkOj_22Ku90C",
       "cited_by_count": 3,
       "pdf_url": "/pdf/2025-environmental-and-evolutionary-factors-jointly-shape-life-history-trait-diversity-of-terrestrial-vertebrates-across-china.pdf"
-    },
-    {
-      "title": "Global Patterns and Determinants of Multiple Facets of Freshwater Fishes Beta Diversity",
-      "year": 2025,
-      "venue": "Global Ecology and Biogeography 34 (12), e70181, 2025",
-      "authors": "Z Chen, CJ Xu, S Brosse, A Toussaint, J Xu, G Su",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:W5xh706n7nkC",
-      "cited_by_count": 2,
-      "pdf_url": null
     },
     {
       "title": "Terrestrial protected areas stabilize the inland habitats of diadromous fishes under climate change",
@@ -156,7 +165,7 @@
       "venue": "Nature Communications 14 (1), 2332, 2023",
       "authors": "G Su, A Mertel, S Brosse, JM Calabrese",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:u9iWguZQMMsC",
-      "cited_by_count": 74,
+      "cited_by_count": 76,
       "pdf_url": "/pdf/Su%202023%20Species-invasiveness%20and%20community.pdf"
     },
     {
@@ -184,7 +193,7 @@
       "authors": "T Zhao, G Su, J Jiang, N Li, C Zhao, Z Sun, JR Khatiwada",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:p2g8aNsByqUC",
       "cited_by_count": 10,
-      "pdf_url": null
+      "pdf_url": "/pdf/2023-functional-diversity-himalayan-amphibian-assemblages.pdf"
     },
     {
       "title": "Effects of multiple environmental stressors on zoobenthos communities in shallow lakes: Evidence from a mesocosm experiment",
@@ -246,7 +255,7 @@
       "venue": "Global Ecology and Biogeography 31, 700– 713, 2022",
       "authors": "G Su, PA Tedesco, A Toussaint, S Villéger, S Brosse",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:abG-DnoFyZgC",
-      "cited_by_count": 33,
+      "cited_by_count": 34,
       "pdf_url": "/pdf/Contemporary%20environment%20and%20historical%20legacy%20explain%20functional%20diversity%20of%20freshwater%20fishes%20in%20the%20world%20rivers.pdf"
     },
     {
@@ -273,7 +282,7 @@
       "venue": "Science 371 (6531), 835-838, 2021",
       "authors": "G Su, M Logez, J Xu, S Tao, S Villéger, S Brosse",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:D03iK_w7-QYC",
-      "cited_by_count": 711,
+      "cited_by_count": 714,
       "pdf_url": "/pdf/2021_Su%20et%20al_Human%20impacts%20on%20global%20freshwater%20fish%20biodiversity_Science.pdf"
     },
     {
@@ -282,7 +291,7 @@
       "venue": "Global Ecology and Biogeography 30 (12), 2330-2336, 2021",
       "authors": "S Brosse, N Charpin, G Su, A Toussaint, GA Herrera‐r, PA Tedesco, ...",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:b0M2c_1WBrUC",
-      "cited_by_count": 142,
+      "cited_by_count": 143,
       "pdf_url": "/pdf/Brosse%20et%20al%202021%20FISHMORPH%20A%20global%20database%20on%20morphological%20traits%20of%20freshwater%20fishes.pdf"
     },
     {
@@ -318,7 +327,7 @@
       "venue": "Global Ecology and Biogeography 28 (2), 211-221, 2019",
       "authors": "G Su, S Villéger, S Brosse",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:Tyk-4Ss8FVUC",
-      "cited_by_count": 88,
+      "cited_by_count": 89,
       "pdf_url": "/pdf/Su%2C%20Vill%C3%A9ger%2C%20Brosse%20-%202019%20-%20Morphological%20diversity%20of%20freshwater%20fishes%20differs%20between%20realms%2C%20but%20morphologically%20extreme%20species%20a.pdf"
     },
     {
@@ -354,7 +363,7 @@
       "venue": "Global Ecology and Conservation 3, 288-296, 2015",
       "authors": "J Xu, G Su, Y Xiong, M Akasaka, JG Molinos, SM Shin-ichiro, M Zhang",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:2osOgNQ5qMEC",
-      "cited_by_count": 17,
+      "cited_by_count": 18,
       "pdf_url": "/pdf/Xu%20et%20al.%20-%202015%20-%20Complimentary%20analysis%20of%20metacommunity%20nestedness%20and%20diversity%20partitioning%20highlights%20the%20need%20for%20a%20holistic%20cons.pdf"
     },
     {
@@ -364,7 +373,7 @@
       "authors": "沙永翠， 张培育， 张欢， 苏国欢， 徐军",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:pyW8ca7W8N0C",
       "cited_by_count": 13,
-      "pdf_url": null
+      "pdf_url": "/pdf/2015-habitat-environment-yellow-catfish-trophic-niches.pdf"
     },
     {
       "title": "Diverse dietary strategy of lake anchovy Coilia ectenes taihuensis in lakes with different trophic status",
@@ -382,7 +391,7 @@
       "authors": "熊鹰， 张敏， 张欢， 苏国欢， 沙泳翠， 徐军",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:f2IySw72cVMC",
       "cited_by_count": 7,
-      "pdf_url": null
+      "pdf_url": "/pdf/2015-fish-morphology-trophic-position.pdf"
     },
     {
       "title": "大坝截流前后金沙江观音岩水电站鱼类群落功能多样性的变化",
@@ -391,7 +400,7 @@
       "authors": "苏国欢， 沙泳翠， 熊鹰， 张培育， 徐军",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:UeHWp8X0CEIC",
       "cited_by_count": 5,
-      "pdf_url": null
+      "pdf_url": "/pdf/2015-guanyinyan-dam-fish-functional-diversity.pdf"
     }
   ]
 }

@@ -52,6 +52,14 @@ def download(url: str, target: pathlib.Path) -> None:
 
 
 def acquire(source: dict, target: pathlib.Path) -> None:
+    if source.get("local_path"):
+        local = pathlib.Path(source["local_path"]).expanduser()
+        if not local.is_absolute():
+            local = (ROOT / local).resolve()
+        if not local.exists():
+            raise FileNotFoundError(f"local source not found: {source['local_path']}")
+        shutil.copyfile(local, target)
+        return
     if source.get("local_filename"):
         local = pathlib.Path.home() / "Downloads" / source["local_filename"]
         if not local.exists():
@@ -100,6 +108,17 @@ def title_check(path: pathlib.Path, title: str) -> str:
     return f"Chinese-title overlap {overlap:.2f}"
 
 
+def validate_source(path: pathlib.Path, source: dict, title: str) -> str:
+    """Validate automatically, or retain a documented visual check for legacy PDFs."""
+    manual = source.get("manual_validation")
+    if manual:
+        reader = PdfReader(str(path))
+        if not reader.pages:
+            raise ValueError("PDF has no pages")
+        return manual
+    return title_check(path, title)
+
+
 def main() -> None:
     works = json.loads(PUBLICATIONS.read_text(encoding="utf-8"))["works"]
     by_title = {work["title"]: work for work in works}
@@ -121,7 +140,7 @@ def main() -> None:
                     status="verified_present",
                     saved_as=final.name,
                     bytes=final.stat().st_size,
-                    validation=title_check(final, work["title"]),
+                    validation=validate_source(final, source, work["title"]),
                 )
             except Exception as exc:
                 entry.update(status="failed_existing_validation", detail=str(exc))
@@ -139,7 +158,7 @@ def main() -> None:
                 shutil.copyfile(raw, candidate)
             if candidate.read_bytes()[:5] != b"%PDF-":
                 raise ValueError("downloaded content is not a PDF")
-            entry["validation"] = title_check(candidate, work["title"])
+            entry["validation"] = validate_source(candidate, source, work["title"])
             candidate.replace(final)
             entry.update(status="downloaded", saved_as=final.name, bytes=final.stat().st_size)
         except Exception as exc:

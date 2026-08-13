@@ -65,7 +65,7 @@
     "license": "CC BY-NC-ND",
     "source": "Refubium, Freie Universität Berlin",
     "status": "failed",
-    "detail": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)>"
+    "detail": "<urlopen error [WinError 10013] 以一种访问权限不允许的方式做了一个访问套接字的尝试。>"
   },
   {
     "title": "Terrestrial protected areas stabilize the inland habitats of diadromous fishes under climate change",
@@ -111,25 +111,49 @@
   {
     "title": "栖息地环境对种群营养生态位的影响——以黄颡鱼为例",
     "url": "https://www.ecologica.cn/stxb/article/pdf/stxb201305121024",
+    "local_path": "../../代表作/下载/栖息地环境对种群营养生态位的影响——以黄颡鱼为例.pdf",
     "license": "Journal-provided full text",
-    "source": "生态学报",
-    "status": "failed",
-    "detail": "download too small (59 bytes)"
+    "source": "Local author copy of the journal-provided full text",
+    "filename": "2015-habitat-environment-yellow-catfish-trophic-niches.pdf",
+    "status": "verified_present",
+    "saved_as": "2015-habitat-environment-yellow-catfish-trophic-niches.pdf",
+    "bytes": 3359326,
+    "validation": "Chinese-title overlap 1.00"
   },
   {
     "title": "鱼类形态特征与营养级位置之间关系初探",
     "url": "http://www.jlakes.org/ch/reader/create_pdf.aspx?file_no=27466&flag=1&year_id=2015&quarter_id=3",
+    "local_path": "../../代表作/下载/鱼类形态特征与营养级位置之间关系初探.pdf",
     "license": "Journal-provided full text",
-    "source": "湖泊科学",
-    "status": "failed",
-    "detail": "HTTP Error 502: Bad Gateway"
+    "source": "Local author copy of the journal-provided full text",
+    "filename": "2015-fish-morphology-trophic-position.pdf",
+    "manual_validation": "Opening page visually verified: exact Chinese title, 2015 Journal of Lake Sciences citation, and Guohuan Su listed as an author",
+    "status": "verified_present",
+    "saved_as": "2015-fish-morphology-trophic-position.pdf",
+    "bytes": 2127930,
+    "validation": "Opening page visually verified: exact Chinese title, 2015 Journal of Lake Sciences citation, and Guohuan Su listed as an author"
   },
   {
     "title": "大坝截流前后金沙江观音岩水电站鱼类群落功能多样性的变化",
     "url": "https://yangtzebasin.whlib.ac.cn/CN/article/downloadArticleFile.do?attachType=PDF&id=10973",
+    "local_path": "../../代表作/下载/大坝截流前后金沙江观音岩水电站鱼类群落功能多样性的变化.pdf",
     "license": "Journal-provided full text",
-    "source": "长江流域资源与环境",
-    "status": "failed",
-    "detail": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>"
+    "source": "Local author copy of the journal-provided full text",
+    "filename": "2015-guanyinyan-dam-fish-functional-diversity.pdf",
+    "status": "verified_present",
+    "saved_as": "2015-guanyinyan-dam-fish-functional-diversity.pdf",
+    "bytes": 401145,
+    "validation": "Chinese-title overlap 1.00"
+  },
+  {
+    "title": "Functional diversity patterns reveal different elevations shaping Himalayan amphibian assemblages, highlighting the importance of morphologically extreme individuals",
+    "local_path": "../../代表作/其他文章/Zhao-2023-Functional diversity patterns reveal.pdf",
+    "license": "CC BY-NC-ND 4.0",
+    "source": "Local author copy of the open-access publisher PDF",
+    "filename": "2023-functional-diversity-himalayan-amphibian-assemblages.pdf",
+    "status": "verified_present",
+    "saved_as": "2023-functional-diversity-himalayan-amphibian-assemblages.pdf",
+    "bytes": 4955953,
+    "validation": "title-word overlap 1.00"
   }
 ]
