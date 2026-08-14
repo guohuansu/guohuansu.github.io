@@ -1,6 +1,6 @@
-"""Download and verify manually vetted public full-text sources.
+"""Import and verify manually vetted full-text sources.
 
-The source list records where each file came from and its public-sharing basis.
+The source list records where each file came from and its authorization basis.
 Downloaded files are accepted only when they are readable PDFs whose opening
 pages match the target publication title.
 """

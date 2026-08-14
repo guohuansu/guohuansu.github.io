@@ -23,6 +23,19 @@ PDF_OVERRIDES = {
     "大坝截流前后金沙江观音岩水电站鱼类群落功能多样性的变化": "2015-guanyinyan-dam-fish-functional-diversity.pdf",
     "Functional diversity patterns reveal different elevations shaping Himalayan amphibian assemblages, highlighting the importance of morphologically extreme individuals": "2023-functional-diversity-himalayan-amphibian-assemblages.pdf",
     "Impacts of nonnative fishes on local contributions to beta diversity in United States freshwater fishes": "2025-impacts-of-nonnative-fishes-on-local-contributions-to-beta-diversity-in-united-states-freshwater-fishes.pdf",
+    "Human impacts on fish biodiversity in the Yangtze River Basin: a multidimensional assessment using the Cumulative Change in Biodiversity Facets (CCBF) index": "2026-human-impacts-yangtze-fish-biodiversity-ccbf.pdf",
+    "Differential controls of warming and phosphorus enrichment on CO2, CH4, and N2O emissions in shallow lake mesocosms": "2026-differential-controls-warming-phosphorus-greenhouse-gases.pdf",
+    "Spatial Patterns and Determinants of Multidimensional Beta Diversity in the United States Freshwater Fishes": "2026-spatial-patterns-multidimensional-beta-diversity-us-fishes.pdf",
+    "Phytoplankton dominance alters basal energy pathways and food web structure in eutrophic shallow lakes": "2026-phytoplankton-dominance-basal-energy-food-web.pdf",
+    "Global diversity patterns and threats of cave fish": "2025-global-diversity-patterns-threats-cave-fish.pdf",
+    "Global Patterns and Determinants of Multiple Facets of Freshwater Fishes Beta Diversity": "2025-global-patterns-determinants-freshwater-fish-beta-diversity.pdf",
+    "Spatial distribution and introduction pathways of non-native freshwater fish species in China": "2024-spatial-distribution-introduction-pathways-nonnative-fish-china.pdf",
+    "Intra-annual compositions and diversity variations of waterbird communities in China": "2024-intra-annual-waterbird-communities-china.pdf",
+    "Assessment of greenhouse gases emissions and intensity from Chinese marine aquaculture in the past three decades": "2023-greenhouse-gas-emissions-chinese-marine-aquaculture.pdf",
+    "Societal benefits and environmental performance of Chinese aquaculture": "2023-societal-benefits-environmental-performance-chinese-aquaculture.pdf",
+    "Assessing sustainable performance of aquatic species using multiple footprints for comprehensive dietary advice": "2023-assessing-sustainable-performance-aquatic-species.pdf",
+    "Current status of greenhouse gas emissions from aquaculture in China": "2022-current-status-greenhouse-gas-emissions-aquaculture-china.pdf",
+    "Biogeographic Regionalization: Freshwater": "2022-biogeographic-regionalization-freshwater.pdf",
 }
 EXCLUDED_TITLES = {
     # This is the name of a repository page accidentally indexed as a Scholar

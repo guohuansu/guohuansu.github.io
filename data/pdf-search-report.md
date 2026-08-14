@@ -1,26 +1,19 @@
-# Full-text search report
+# Full-text coverage report
 
-Last reviewed: 2026-08-13
+Last reviewed: 2026-08-14
 
-Google Scholar is the publication authority. The website currently has a local download for 31 of 44 dated records (30 distinct PDF files; the French and English thesis records share one file).
+Google Scholar remains the publication authority. All 44 dated records currently shown on the website have a local full-text download. They use 43 distinct PDF files because the French and English doctoral-thesis records share one file.
 
-Only publisher-open files, Creative Commons works, public preprints, institutional-repository copies, and the author's local article copies were imported. Subscription copies and files without a clear sharing basis were not republished.
+Thirteen previously missing PDFs were imported from the site owner's local `所有文章` archive on 2026-08-14. These include four 2026 papers, two 2025 papers, two 2024 papers, three 2023 papers, and two 2022 records.
 
-The local `代表作` archive supplied four additional full texts: the 2023 Himalayan amphibian functional-diversity article and three Chinese-language articles from 2015. Their opening pages, titles, authorship, and PDF readability were verified before import.
+Every imported PDF was checked for readability and matched against the publication title extracted from its opening pages. Exact filename overrides protect similarly titled records from being assigned the wrong file.
 
-## Records still without a local PDF
+## Current coverage
 
-- **Human impacts on fish biodiversity in the Yangtze River Basin… (2026):** a local publisher PDF was found, but it states an exclusive Springer Nature licence; retain the external article link unless an accepted manuscript is supplied.
-- **Differential controls of warming and phosphorus enrichment… (2026):** no public full text or repository manuscript was found.
-- **Phytoplankton dominance alters basal energy pathways… (2026):** the publisher marks the article open access, but its PDF endpoint is currently blocked by anti-automation checks.
-- **Global diversity patterns and threats of cave fish (2025):** the available publisher copy states © John Wiley & Sons and contains no Creative Commons grant.
-- **Global Patterns and Determinants of Multiple Facets… (2025):** an author-site copy exists, but the displayed publisher version has no explicit reusable licence.
-- **Spatial Patterns and Determinants of Multidimensional Beta Diversity… (2025):** no matching file was found in the local archive; a similarly titled non-native-fish PDF belongs to a different Scholar record and is now protected by an exact mapping.
-- **Spatial distribution and introduction pathways… (2024):** a CC BY-NC-ND copy exists in Refubium; the repository currently fails TLS downloads from the updater.
-- **Intra-annual compositions and diversity variations… (2024):** a public SSRN preprint exists; the SSRN download endpoint currently rejects automated retrieval.
-- **Assessment of greenhouse gases emissions and intensity… (2023):** ResearchGate offers only “request full text”; no public repository copy was found.
-- **Societal benefits and environmental performance of Chinese aquaculture (2023):** no public full text or repository manuscript was found.
-- **Assessing sustainable performance of aquatic species… (2023):** no public full text or repository manuscript was found.
-- **Current status of greenhouse gas emissions from aquaculture in China (2022):** the publisher marks the article open access, but its PDF endpoint is currently blocked by anti-automation checks.
-- **Biogeographic Regionalization: Freshwater (2022):** this is a book chapter and no legally public full text was found.
-For the technically blocked open-access records, manually downloading the official PDF into `pdf/` and rerunning `scripts/update_publications.py` will attach it automatically.
+- Dated Google Scholar records: 44
+- Records with a local PDF link: 44
+- Distinct local PDF files: 43
+- Records without a local PDF: 0
+- Unmatched local PDF files: 0
+
+The local copies were supplied and explicitly authorized for website upload by the site owner. Future Scholar refreshes will preserve these links through `PDF_OVERRIDES` in `scripts/update_publications.py`.

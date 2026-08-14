@@ -16,6 +16,8 @@ For a broader open-access search, install `pypdf` and run `python scripts/discov
 
 Vetted sources that need a direct URL or an existing local file are listed in `data/manual-open-pdf-sources.json`. A local source may use `local_filename` for the computer's Downloads folder or `local_path` for a path relative to the repository (absolute paths also work). Run `python scripts/import_open_pdf_sources.py` to import and validate them. The resulting audit is stored in `data/manual-open-pdf-audit.json`.
 
+If the Scholar list is already current and only local PDFs changed, run `python scripts/rematch_local_pdfs.py` to rebuild download links without contacting Google Scholar.
+
 ## Local preview
 
 Run a static web server from the repository root, for example `python -m http.server 8000`, then open `http://localhost:8000`.
