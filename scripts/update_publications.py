@@ -47,6 +47,24 @@ EXCLUDED_TITLES = {
     "Mapping global biodiversity, profiling invasive species and developing a global index of biodiversity change based on taxonomic, functional and phylogenetic facets of …",
     "Cartographie de la biodiversité mondiale, profilage des espèces envahissantes et élaboration d'un indice global du changement de la biodiversité basé sur les facettes …",
 }
+NON_JOURNAL_VENUE_MARKERS = {
+    "arxiv",
+    "biorxiv",
+    "chemrxiv",
+    "figshare",
+    "medrxiv",
+    "mendeley data",
+    "osf preprints",
+    "reference module",
+    "research square",
+    "ssrn",
+    "zenodo",
+}
+
+
+def is_formal_journal_article(work):
+    venue = work["venue"].strip().casefold()
+    return bool(venue) and not any(marker in venue for marker in NON_JOURNAL_VENUE_MARKERS)
 
 
 def clean(fragment):
@@ -125,6 +143,7 @@ if not works:
 # website limited to publications with a confirmed year.
 works = [work for work in works if work["year"] is not None]
 works = [work for work in works if work["title"] not in EXCLUDED_TITLES]
+works = [work for work in works if is_formal_journal_article(work)]
 author_metadata = json.loads(AUTHOR_METADATA.read_text(encoding="utf-8"))
 for work in works:
     work["corresponding_authors"] = author_metadata.get(work["title"], [])

@@ -1,10 +1,10 @@
 {
   "updated_at": "2026-08-13",
-  "total_works": 42,
+  "total_works": 38,
   "source": "Google Scholar",
   "scholar_id": "uqPekUQAAAAJ",
   "profile_url": "https://scholar.google.com/citations?user=uqPekUQAAAAJ&hl=en&pagesize=100",
-  "pdf_count": 42,
+  "pdf_count": 38,
   "works": [
     {
       "title": "Human impacts on fish biodiversity in the Yangtze River Basin: a multidimensional assessment using the Cumulative Change in Biodiversity Facets (CCBF) index",
@@ -84,19 +84,6 @@
       ]
     },
     {
-      "title": "Temperature regimes shape similarity of life-history strategies between native and non-native freshwater fishes",
-      "year": 2026,
-      "venue": "",
-      "authors": "G Su, K Zhao, J Olden, JG Molinos, C Liu, M Zhang, J Xu, O Ovaskainen",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:kzcrU_BdoSEC",
-      "cited_by_count": 0,
-      "pdf_url": "/pdf/2026-temperature-regimes-shape-similarity-of-life-history-strategies-between-native-and-non-native-freshwater-fishes.pdf",
-      "corresponding_authors": [
-        "G Su",
-        "J Xu"
-      ]
-    },
-    {
       "title": "Ecological similarity governs non-native fish establishment while human pressure and native diversity shape invasion richness",
       "year": 2025,
       "venue": "Science Advances 11 (32), eadw4347, 2025",
@@ -147,18 +134,6 @@
       "corresponding_authors": [
         "SQ Su",
         "T Zhao"
-      ]
-    },
-    {
-      "title": "Terrestrial protected areas stabilize the inland habitats of diadromous fishes under climate change",
-      "year": 2025,
-      "venue": "Available at SSRN 5450322, 2025",
-      "authors": "X Bai, P Zhang, Z Yang, G Grenouillet, J Gessner, X Dong, BR Shipley, ...",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:UHK10RUVsp4C",
-      "cited_by_count": 1,
-      "pdf_url": "/pdf/2025-terrestrial-protected-areas-stabilize-the-inland-habitats-of-diadromous-fishes-under-climate-change.pdf",
-      "corresponding_authors": [
-        "P Zhang"
       ]
     },
     {
@@ -314,18 +289,6 @@
       ]
     },
     {
-      "title": "Data and code from: Species invasiveness and community invasibility of North American freshwater fish fauna revealed via trait-based analysis",
-      "year": 2023,
-      "venue": "Zenodo, 2023",
-      "authors": "G Su, A Mertel, S Brosse, JM Calabrese",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:JQOojiI6XY0C",
-      "cited_by_count": 1,
-      "pdf_url": "/pdf/2023-data-and-code-from-species-invasiveness-and-community-invasibility-of-north-american-freshwater-fish-fauna-revealed-via-trait-based-ana.pdf",
-      "corresponding_authors": [
-        "G Su"
-      ]
-    },
-    {
       "title": "Editorial: Multiple stressors and ecological response in marine fishery ecosystems",
       "year": 2023,
       "venue": "Frontiers in Marine Science 9, 2023",
@@ -373,16 +336,6 @@
         "M Zhang",
         "P Zhang"
       ]
-    },
-    {
-      "title": "Biogeographic Regionalization: Freshwater",
-      "year": 2022,
-      "venue": "Reference Module in Life Sciences, 2022",
-      "authors": "MS Dias, A Oikonomou, G Su",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:CHSYGLWDkRkC",
-      "cited_by_count": 6,
-      "pdf_url": "/pdf/2022-biogeographic-regionalization-freshwater.pdf",
-      "corresponding_authors": []
     },
     {
       "title": "Human impacts on global freshwater fish biodiversity",

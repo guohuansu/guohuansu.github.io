@@ -39,10 +39,21 @@ def load_updater_literal(name: str):
     raise RuntimeError(f"{name} not found in update_publications.py")
 
 
+def is_formal_journal_article(work: dict, markers: set[str]) -> bool:
+    venue = work["venue"].strip().casefold()
+    return bool(venue) and not any(marker in venue for marker in markers)
+
+
 def main() -> None:
     data = json.loads(PUBLICATIONS.read_text(encoding="utf-8"))
     excluded_titles = load_updater_literal("EXCLUDED_TITLES")
-    works = [work for work in data["works"] if work["title"] not in excluded_titles]
+    non_journal_markers = load_updater_literal("NON_JOURNAL_VENUE_MARKERS")
+    works = [
+        work
+        for work in data["works"]
+        if work["title"] not in excluded_titles
+        and is_formal_journal_article(work, non_journal_markers)
+    ]
     data["works"] = works
     author_metadata = json.loads(AUTHOR_METADATA.read_text(encoding="utf-8"))
     for work in works:
