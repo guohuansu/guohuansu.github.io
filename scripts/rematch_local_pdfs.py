@@ -29,25 +29,27 @@ def normalize_title(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", " ", value).strip()
 
 
-def load_overrides() -> dict[str, str]:
+def load_updater_literal(name: str):
     tree = ast.parse(UPDATER.read_text(encoding="utf-8"))
     for node in tree.body:
         if isinstance(node, ast.Assign) and any(
-            isinstance(target, ast.Name) and target.id == "PDF_OVERRIDES" for target in node.targets
+            isinstance(target, ast.Name) and target.id == name for target in node.targets
         ):
             return ast.literal_eval(node.value)
-    raise RuntimeError("PDF_OVERRIDES not found in update_publications.py")
+    raise RuntimeError(f"{name} not found in update_publications.py")
 
 
 def main() -> None:
     data = json.loads(PUBLICATIONS.read_text(encoding="utf-8"))
-    works = data["works"]
+    excluded_titles = load_updater_literal("EXCLUDED_TITLES")
+    works = [work for work in data["works"] if work["title"] not in excluded_titles]
+    data["works"] = works
     author_metadata = json.loads(AUTHOR_METADATA.read_text(encoding="utf-8"))
     for work in works:
         work["corresponding_authors"] = author_metadata.get(work["title"], [])
 
     files = sorted(PDF_DIR.glob("*.pdf"))
-    overrides = load_overrides()
+    overrides = load_updater_literal("PDF_OVERRIDES")
     reserved = {PDF_DIR / name for name in overrides.values() if (PDF_DIR / name).exists()}
     unused = set(files) - reserved
 
@@ -74,6 +76,7 @@ def main() -> None:
         else:
             work["pdf_url"] = None
 
+    data["total_works"] = len(works)
     data["pdf_count"] = sum(bool(work["pdf_url"]) for work in works)
     PUBLICATIONS.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 

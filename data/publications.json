@@ -1,10 +1,10 @@
 {
   "updated_at": "2026-08-13",
-  "total_works": 44,
+  "total_works": 42,
   "source": "Google Scholar",
   "scholar_id": "uqPekUQAAAAJ",
   "profile_url": "https://scholar.google.com/citations?user=uqPekUQAAAAJ&hl=en&pagesize=100",
-  "pdf_count": 44,
+  "pdf_count": 42,
   "works": [
     {
       "title": "Human impacts on fish biodiversity in the Yangtze River Basin: a multidimensional assessment using the Cumulative Change in Biodiversity Facets (CCBF) index",
@@ -419,26 +419,6 @@
       "corresponding_authors": [
         "G Su"
       ]
-    },
-    {
-      "title": "Mapping global biodiversity, profiling invasive species and developing a global index of biodiversity change based on taxonomic, functional and phylogenetic facets of …",
-      "year": 2020,
-      "venue": "Université Paul Sabatier-Toulouse III, 2020",
-      "authors": "G Su",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:EUQCXRtRnyEC",
-      "cited_by_count": 0,
-      "pdf_url": "/pdf/2020-mapping-global-biodiversity-doctoral-thesis.pdf",
-      "corresponding_authors": []
-    },
-    {
-      "title": "Cartographie de la biodiversité mondiale, profilage des espèces envahissantes et élaboration d'un indice global du changement de la biodiversité basé sur les facettes …",
-      "year": 2020,
-      "venue": "Toulouse 3, 2020",
-      "authors": "G Su",
-      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:_xSYboBqXhAC",
-      "cited_by_count": 0,
-      "pdf_url": "/pdf/2020-mapping-global-biodiversity-doctoral-thesis.pdf",
-      "corresponding_authors": []
     },
     {
       "title": "Morphological diversity of freshwater fishes differs between realms, but morphologically extreme species are widespread",

@@ -42,6 +42,10 @@ EXCLUDED_TITLES = {
     # This is the name of a repository page accidentally indexed as a Scholar
     # item, not one of Guohuan Su's publications.
     "Publications Repository-Helmholtz-Zentrum Dresden-Rossendorf",
+    # Scholar indexes the doctoral thesis twice (English and French). The site
+    # presents it once under the PhD entry in Experience instead.
+    "Mapping global biodiversity, profiling invasive species and developing a global index of biodiversity change based on taxonomic, functional and phylogenetic facets of …",
+    "Cartographie de la biodiversité mondiale, profilage des espèces envahissantes et élaboration d'un indice global du changement de la biodiversité basé sur les facettes …",
 }
 
 

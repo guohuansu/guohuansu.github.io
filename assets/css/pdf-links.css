@@ -11,6 +11,17 @@
   color: white;
 }
 
+.experience-thesis {
+  font-size: 0.84rem;
+  margin-top: 10px !important;
+}
+
+.experience-thesis a {
+  color: var(--teal);
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+
 
 .publication-author-self {
   color: var(--ink);
