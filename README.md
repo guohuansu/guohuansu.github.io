@@ -18,6 +18,8 @@ Vetted sources that need a direct URL or an existing local file are listed in `d
 
 If the Scholar list is already current and only local PDFs changed, run `python scripts/rematch_local_pdfs.py` to rebuild download links without contacting Google Scholar.
 
+Corresponding-author labels are maintained in `data/publication-author-metadata.json`. Both the online updater and offline rematcher attach them to the Scholar records.
+
 ## Local preview
 
 Run a static web server from the repository root, for example `python -m http.server 8000`, then open `http://localhost:8000`.

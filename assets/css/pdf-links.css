@@ -11,6 +11,22 @@
   color: white;
 }
 
+
+.publication-author-self {
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.corresponding-mark {
+  color: var(--teal);
+  font-size: 0.82em;
+  margin-left: 0.08em;
+}
+
+.author-legend {
+  margin-left: 0.7rem;
+  white-space: nowrap;
+}
 @media (max-width: 800px) {
   .publication-links {
     grid-column: 2;

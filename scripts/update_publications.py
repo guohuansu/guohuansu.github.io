@@ -12,6 +12,7 @@ from difflib import SequenceMatcher
 SCHOLAR_ID = "uqPekUQAAAAJ"
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "publications.json"
+AUTHOR_METADATA = ROOT / "data" / "publication-author-metadata.json"
 PROFILE = f"https://scholar.google.com/citations?user={SCHOLAR_ID}&hl=en&pagesize=100"
 PDF_DIR = ROOT / "pdf"
 PDF_OVERRIDES = {
@@ -120,6 +121,10 @@ if not works:
 # website limited to publications with a confirmed year.
 works = [work for work in works if work["year"] is not None]
 works = [work for work in works if work["title"] not in EXCLUDED_TITLES]
+author_metadata = json.loads(AUTHOR_METADATA.read_text(encoding="utf-8"))
+for work in works:
+    work["corresponding_authors"] = author_metadata.get(work["title"], [])
+
 
 # Scholar profiles default to citation-count order; the website is easier to scan
 # when the newest work appears first while retaining citation order within a year.

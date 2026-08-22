@@ -17,6 +17,7 @@ from difflib import SequenceMatcher
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 PUBLICATIONS = ROOT / "data" / "publications.json"
+AUTHOR_METADATA = ROOT / "data" / "publication-author-metadata.json"
 MISSING = ROOT / "data" / "missing-pdfs.md"
 PDF_DIR = ROOT / "pdf"
 UPDATER = ROOT / "scripts" / "update_publications.py"
@@ -41,6 +42,10 @@ def load_overrides() -> dict[str, str]:
 def main() -> None:
     data = json.loads(PUBLICATIONS.read_text(encoding="utf-8"))
     works = data["works"]
+    author_metadata = json.loads(AUTHOR_METADATA.read_text(encoding="utf-8"))
+    for work in works:
+        work["corresponding_authors"] = author_metadata.get(work["title"], [])
+
     files = sorted(PDF_DIR.glob("*.pdf"))
     overrides = load_overrides()
     reserved = {PDF_DIR / name for name in overrides.values() if (PDF_DIR / name).exists()}
@@ -76,7 +81,6 @@ def main() -> None:
         "# Publications without a local PDF",
         "",
         f"Generated {date.today().isoformat()}. Add a PDF to `pdf/` and rerun the updater.",
-        "",
     ]
     lines.extend(
         f"- {work['year']} - {work['title']}" for work in works if not work["pdf_url"]
