@@ -40,15 +40,21 @@ function formatAuthors(authors, correspondingAuthors = []) {
   }).join('');
 }
 
-function render() {
-  const query = document.querySelector('#publication-search').value.toLowerCase();
-  const year = document.querySelector('#year-filter').value;
-  const shown = works.filter(work =>
-    (year === 'all' || String(work.year) === year) &&
-    `${work.title} ${work.venue} ${work.year}`.toLowerCase().includes(query)
-  );
+function authorNames(authors) {
+  return String(authors ?? '')
+    .split(/[,，]/)
+    .map(name => name.trim())
+    .filter(name => name && name !== '...');
+}
 
-  list.innerHTML = shown.length ? shown.map(work => `
+function isFirstOrCorrespondingAuthor(work) {
+  const firstAuthor = authorNames(work.authors)[0] || '';
+  return isSiteOwner(firstAuthor) ||
+    (work.corresponding_authors || []).some(isSiteOwner);
+}
+
+function renderPublication(work) {
+  return `
     <article class="publication">
       <span class="publication-year">${escapeHtml(work.year || '—')}</span>
       <div>
@@ -60,7 +66,36 @@ function render() {
         ${work.url ? `<a href="${escapeHtml(work.url)}" target="_blank" rel="noopener">Scholar ↗</a>` : ''}
       </div>
     </article>
-  `).join('') : '<p>No matching publications found.</p>';
+  `;
+}
+
+function renderGroup(title, publications) {
+  if (!publications.length) return '';
+  return `
+    <section class="publication-group">
+      <header class="publication-group-header">
+        <h3>${escapeHtml(title)}</h3>
+        <span>${publications.length} publication${publications.length === 1 ? '' : 's'}</span>
+      </header>
+      ${publications.map(renderPublication).join('')}
+    </section>
+  `;
+}
+
+function render() {
+  const query = document.querySelector('#publication-search').value.toLowerCase();
+  const year = document.querySelector('#year-filter').value;
+  const shown = works.filter(work =>
+    (year === 'all' || String(work.year) === year) &&
+    `${work.title} ${work.venue} ${work.year}`.toLowerCase().includes(query)
+  );
+
+  const leadWorks = shown.filter(isFirstOrCorrespondingAuthor);
+  const otherWorks = shown.filter(work => !isFirstOrCorrespondingAuthor(work));
+
+  list.innerHTML = shown.length
+    ? renderGroup('First- or corresponding-author publications', leadWorks) + renderGroup('Other publications', otherWorks)
+    : '<p>No matching publications found.</p>';
 }
 
 fetch('data/publications.json', { cache: 'no-store' }).then(response => response.json()).then(data => {

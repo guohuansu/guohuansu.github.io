@@ -27,9 +27,49 @@
   margin-left: 0.7rem;
   white-space: nowrap;
 }
+
+.publication-list {
+  border-top: 0;
+}
+
+.publication-group + .publication-group {
+  margin-top: 64px;
+}
+
+.publication-group-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px 6px;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--line);
+}
+
+.publication-group-header h3 {
+  margin: 0;
+  font: 600 clamp(1.35rem, 2vw, 1.8rem)/1.2 var(--serif);
+}
+
+.publication-group-header span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
 @media (max-width: 800px) {
   .publication-links {
     grid-column: 2;
     justify-content: flex-start;
+  }
+
+  .publication-group + .publication-group {
+    margin-top: 48px;
+  }
+
+  .publication-group-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
   }
 }
