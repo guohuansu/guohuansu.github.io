@@ -1,6 +1,7 @@
 """Refresh the publication list from Guohuan Su's public Google Scholar profile."""
 import html
 import json
+import os
 import pathlib
 import re
 import urllib.parse
@@ -109,8 +110,34 @@ request = urllib.request.Request(
         "Accept-Language": "en-US,en;q=0.9",
     },
 )
-with urllib.request.urlopen(request, timeout=45) as response:
-    page = response.read().decode("utf-8")
+api_key = os.environ.get("SERPAPI_API_KEY", "").strip()
+if api_key:
+    pages = []
+    for start in range(0, 1000, 100):
+        params = urllib.parse.urlencode({
+            "engine": "google_scholar_author", "author_id": SCHOLAR_ID,
+            "hl": "en", "num": 100, "start": start,
+            "output": "html", "api_key": api_key,
+        })
+        try:
+            with urllib.request.urlopen("https://serpapi.com/search?" + params, timeout=90) as response:
+                fragment = response.read().decode("utf-8")
+        except Exception:
+            raise RuntimeError("SerpApi request failed; check the API key and quota. Existing data was preserved.") from None
+        count = len(re.findall(r'<tr class="gsc_a_tr">', fragment))
+        if not count and start == 0:
+            raise RuntimeError("SerpApi returned no publication rows; existing data was preserved")
+        pages.append(fragment)
+        if count < 100:
+            break
+    else:
+        raise RuntimeError("Publication pagination exceeded its safety limit; existing data was preserved")
+    page = "\n".join(pages)
+else:
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        raise RuntimeError("Add the SERPAPI_API_KEY repository secret before running the cloud update")
+    with urllib.request.urlopen(request, timeout=45) as response:
+        page = response.read().decode("utf-8")
 
 rows = re.findall(r'<tr class="gsc_a_tr">(.*?)</tr>', page, re.S)
 if not rows:
@@ -144,6 +171,8 @@ if not works:
 works = [work for work in works if work["year"] is not None]
 works = [work for work in works if work["title"] not in EXCLUDED_TITLES]
 works = [work for work in works if is_formal_journal_article(work)]
+if not works:
+    raise RuntimeError("No eligible journal publications were found; existing data was preserved")
 author_metadata = json.loads(AUTHOR_METADATA.read_text(encoding="utf-8"))
 for work in works:
     work["corresponding_authors"] = author_metadata.get(work["title"], [])

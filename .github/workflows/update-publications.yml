@@ -5,15 +5,21 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  pages: write
+  id-token: write
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
-      - run: python scripts/update_publications.py
+          python-version: "3.12"
+      - name: Refresh Google Scholar publications
+        env:
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
+        run: python scripts/update_publications.py
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
@@ -21,3 +27,6 @@ jobs:
           git add data/publications.json data/missing-pdfs.md
           git diff --cached --quiet || git commit -m "chore: refresh publication data"
           git push
+  deploy:
+    needs: update
+    uses: ./.github/workflows/deploy-pages.yml

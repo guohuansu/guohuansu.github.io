@@ -4,7 +4,11 @@ A responsive static academic website hosted by GitHub Pages.
 
 ## Publication updates
 
-`scripts/update_publications.py` retrieves the public publication list from Google Scholar profile `uqPekUQAAAAJ`. GitHub Actions runs it every Monday and commits changes only when the profile changed. It can also be run manually from the Actions tab. If Scholar temporarily blocks automated access, the script fails safely and preserves the existing site data.
+`scripts/update_publications.py` retrieves the public publication list from Google Scholar profile `uqPekUQAAAAJ`. GitHub Actions runs every Monday at 02:17 UTC (10:17 China time; GitHub may delay scheduled jobs), commits refreshed data, and directly calls the Pages deployment workflow. This runs in the cloud even when the owner's computer is off.
+
+Cloud updates require a SerpApi account and a repository Actions secret named `SERPAPI_API_KEY`. Add the API key at Settings → Secrets and variables → Actions → New repository secret. Never put the key in source files. The updater uses the Google Scholar Author API with 100 articles per page; weekly requests are generally within the service's free quota, subject to its current plan. Without a key, the cloud job stops with a clear setup message. Local runs without a key can still fetch Scholar directly.
+
+Set Settings → Pages → Build and deployment → Source to **GitHub Actions**. `deploy-pages.yml` publishes the static site both after ordinary pushes and after a successful scheduled update. After adding the secret, use Actions → Update publications → Run workflow to verify the complete update and deployment. A failed fetch preserves the existing data and deployed website.
 
 Google Scholar is the authoritative publication source. ResearchGate and ORCID remain linked as complementary profiles.
 
