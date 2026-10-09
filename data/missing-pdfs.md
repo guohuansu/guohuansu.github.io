@@ -1,6 +1,11 @@
 # Publications without a local PDF
 
-Generated 2026-08-22. Add a PDF to `pdf/` and rerun the updater.
+Generated 2026-10-09. Add legally shareable files to `pdf/` and rerun the updater.
+
+- 2026 — Functional similarity shapes global patterns of fish naturalization and invasion richness
+- 2022 — Combined morphological trait values (PC1–PC5) of the 9,150 freshwater fish species all over the world
+- 2022 — Data publication: Contemporary environment and historical legacy explain functional diversity of freshwater fishes in the world rivers
+- 2021 — Dataset in paper'FISHMORPH: A global database on morphological traits of freshwater fishes'
 
 ## Unmatched PDF files
 
