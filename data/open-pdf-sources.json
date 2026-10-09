@@ -55,10 +55,6 @@
     "status": "candidate_found"
   },
   {
-    "title": "Temperature regimes shape similarity of life-history strategies between native and non-native freshwater fishes",
-    "status": "no_metadata_match"
-  },
-  {
     "title": "Ecological similarity governs non-native fish establishment while human pressure and native diversity shape invasion richness",
     "openalex_title": "Ecological similarity governs non-native fish establishment while human pressure and native diversity shape invasion richness",
     "title_score": 1.0,
@@ -94,15 +90,6 @@
     "title_score": 1.0,
     "doi": "https://doi.org/10.1111/geb.70181",
     "openalex_id": "https://openalex.org/W4417311410",
-    "candidates": [],
-    "status": "no_reusable_pdf"
-  },
-  {
-    "title": "Terrestrial protected areas stabilize the inland habitats of diadromous fishes under climate change",
-    "openalex_title": "Terrestrial protected areas stabilize the inland habitats of diadromous fishes under climate change",
-    "title_score": 1.0,
-    "doi": "https://doi.org/10.2139/ssrn.5450322",
-    "openalex_id": "https://openalex.org/W4414038549",
     "candidates": [],
     "status": "no_reusable_pdf"
   },
@@ -194,10 +181,6 @@
     "status": "no_reusable_pdf"
   },
   {
-    "title": "Publications Repository-Helmholtz-Zentrum Dresden-Rossendorf",
-    "status": "no_metadata_match"
-  },
-  {
     "title": "Current status of greenhouse gas emissions from aquaculture in China",
     "openalex_title": "Current status of greenhouse gas emissions from aquaculture in China",
     "title_score": 1.0,
@@ -216,23 +199,6 @@
   },
   {
     "title": "Implications for functional diversity conservation of China’s marine fisheries",
-    "status": "no_metadata_match"
-  },
-  {
-    "title": "Biogeographic Regionalization: Freshwater",
-    "openalex_title": "Biogeographic Regionalization: Freshwater",
-    "title_score": 1.0,
-    "doi": "https://doi.org/10.1016/b978-0-12-822562-2.00044-x",
-    "openalex_id": "https://openalex.org/W4226051720",
-    "candidates": [],
-    "status": "no_reusable_pdf"
-  },
-  {
-    "title": "Mapping global biodiversity, profiling invasive species and developing a global index of biodiversity change based on taxonomic, functional and phylogenetic facets of …",
-    "status": "no_metadata_match"
-  },
-  {
-    "title": "Cartographie de la biodiversité mondiale, profilage des espèces envahissantes et élaboration d'un indice global du changement de la biodiversité basé sur les facettes …",
     "status": "no_metadata_match"
   },
   {
@@ -265,5 +231,22 @@
   {
     "title": "大坝截流前后金沙江观音岩水电站鱼类群落功能多样性的变化",
     "status": "no_metadata_match"
+  },
+  {
+    "title": "Functional similarity shapes global patterns of fish naturalization and invasion richness",
+    "openalex_title": "Functional similarity shapes global patterns of fish naturalization and invasion richness",
+    "title_score": 1.0,
+    "doi": "https://doi.org/10.1073/pnas.2610486123",
+    "openalex_id": "https://openalex.org/W7214923308",
+    "candidates": [
+      {
+        "url": "https://pnas.org/doi/pdf/10.1073/pnas.2610486123",
+        "license": "cc-by-nc-nd",
+        "version": "publishedVersion",
+        "source": "Crossref publisher link",
+        "download": "HTTP Error 403: Forbidden"
+      }
+    ],
+    "status": "candidate_found"
   }
 ]

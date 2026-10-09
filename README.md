@@ -18,6 +18,8 @@ Place author manuscripts or other legally shareable full texts in `pdf/`. Use a 
 
 For a broader open-access search, install `pypdf` and run `python scripts/discover_open_pdfs.py --download`. It checks OpenAlex, Unpaywall, and Crossref, accepts only explicitly reusable or repository-hosted manuscripts, validates the downloaded PDF against the title, and records every source in `data/open-pdf-sources.json`.
 
+The weekly cloud update runs this full-text search automatically for every journal paper without a local PDF, retries missing PDFs on later weeks, rematches the downloaded files, and commits both the files and links before deployment. Cloud downloads become local files after pulling the repository with Git or GitHub Desktop. A paper remains listed with its Scholar link when no suitable PDF is found or the host rejects the download.
+
 Vetted sources that need a direct URL or an existing local file are listed in `data/manual-open-pdf-sources.json`. A local source may use `local_filename` for the computer's Downloads folder or `local_path` for a path relative to the repository (absolute paths also work). Run `python scripts/import_open_pdf_sources.py` to import and validate them. The resulting audit is stored in `data/manual-open-pdf-audit.json`.
 
 If the Scholar list is already current and only local PDFs changed, run `python scripts/rematch_local_pdfs.py` to rebuild download links without contacting Google Scholar.

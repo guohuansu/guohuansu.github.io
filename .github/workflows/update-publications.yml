@@ -7,6 +7,9 @@ permissions:
   contents: write
   pages: write
   id-token: write
+concurrency:
+  group: publication-update
+  cancel-in-progress: false
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -20,11 +23,17 @@ jobs:
         env:
           SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
         run: python scripts/update_publications.py
+      - name: Install PDF validation dependency
+        run: python -m pip install "pypdf>=6,<7"
+      - name: Find and download open full texts
+        run: python scripts/discover_open_pdfs.py --download
+      - name: Attach downloaded PDFs
+        run: python scripts/rematch_local_pdfs.py
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/publications.json data/missing-pdfs.md
+          git add data/publications.json data/missing-pdfs.md data/open-pdf-sources.json pdf/
           git diff --cached --quiet || git commit -m "chore: refresh publication data"
           git push
   deploy:

@@ -29,8 +29,8 @@ UA = "guohuansu.github.io open-access full-text updater"
 
 
 def normalise(value: str) -> str:
-    value = unicodedata.normalize("NFKD", value).encode("ascii", "ignore").decode().lower()
-    return re.sub(r"[^a-z0-9]+", " ", value).strip()
+    value = unicodedata.normalize("NFKC", value).casefold()
+    return re.sub(r"[^\w]+", " ", value).strip()
 
 
 def request_json(url: str) -> dict:
@@ -56,7 +56,7 @@ def unpaywall_locations(doi_url: str | None) -> list[dict]:
         record = request_json(
             "https://api.unpaywall.org/v2/"
             + urllib.parse.quote(doi, safe="/")
-            + "?email=webmaster%40guohuansu.github.io"
+            + "?email=suguohuan%40ihb.ac.cn"
         )
     except Exception:
         return []
@@ -102,7 +102,11 @@ def crossref_locations(doi_url: str | None) -> list[dict]:
             "source": {"display_name": "Crossref publisher link", "type": "journal"},
         }
         for item in message.get("link", [])
-        if item.get("content-type") == "application/pdf" and item.get("URL")
+        if item.get("URL") and (
+            item.get("content-type") == "application/pdf"
+            or "/pdf/" in item["URL"]
+            or item["URL"].lower().endswith(".pdf")
+        )
     ]
 
 
@@ -150,14 +154,25 @@ def main() -> None:
     missing = [work for work in publications if not work.get("pdf_url")]
     PDF_DIR.mkdir(exist_ok=True)
     TMP_DIR.mkdir(parents=True, exist_ok=True)
-    audit = []
+    audit = json.loads(AUDIT.read_text(encoding="utf-8")) if AUDIT.exists() else []
+    current_titles = {work["title"] for work in publications}
+    missing_titles = {work["title"] for work in missing}
+    audit = [entry for entry in audit if entry.get("title") in current_titles and entry.get("title") not in missing_titles]
     for index, work in enumerate(missing, 1):
         query = urllib.parse.urlencode({"search": work["title"], "per-page": 8})
         try:
             results = request_json(f"https://api.openalex.org/works?{query}").get("results", [])
-        except Exception as exc:
-            audit.append({"title": work["title"], "status": "lookup_failed", "detail": str(exc)})
-            continue
+        except Exception:
+            results = []
+        # Crossref also resolves newly published papers before OpenAlex indexes them.
+        if not results:
+            try:
+                query = urllib.parse.urlencode({"query.title": work["title"], "rows": 8})
+                items = request_json(f"https://api.crossref.org/works?{query}")["message"]["items"]
+                results = [{"title": (item.get("title") or [""])[0], "doi": "https://doi.org/" + item["DOI"], "locations": []} for item in items]
+            except Exception as exc:
+                audit.append({"title": work["title"], "status": "lookup_failed", "detail": str(exc)})
+                continue
         ranked = sorted(
             ((SequenceMatcher(None, normalise(work["title"]), normalise(item.get("title") or "")).ratio(), item) for item in results),
             key=lambda pair: pair[0],
