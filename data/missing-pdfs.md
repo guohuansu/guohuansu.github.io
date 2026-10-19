@@ -1,6 +1,7 @@
 # Publications without a local PDF
 
-Generated 2026-10-12. Add a PDF to `pdf/` and rerun the updater.
+Generated 2026-10-19. Add a PDF to `pdf/` and rerun the updater.
+- 2026 - Multifaceted freshwater fish α-diversity exhibits discordant spatial patterns and distinct environmental associations across the United States
 - 2026 - Functional similarity shapes global patterns of fish naturalization and invasion richness
 
 ## Unmatched PDF files

@@ -1,11 +1,21 @@
 {
-  "updated_at": "2026-10-12",
-  "total_works": 39,
+  "updated_at": "2026-10-19",
+  "total_works": 40,
   "source": "Google Scholar",
   "scholar_id": "uqPekUQAAAAJ",
   "profile_url": "https://scholar.google.com/citations?user=uqPekUQAAAAJ&hl=en&pagesize=100",
   "pdf_count": 38,
   "works": [
+    {
+      "title": "Multifaceted freshwater fish α-diversity exhibits discordant spatial patterns and distinct environmental associations across the United States",
+      "year": 2026,
+      "venue": "Reviews in Fish Biology and Fisheries 36 (1), 96, 2026",
+      "authors": "C Xu, Z Chen, J Li, Y Li, C Du, N Liu, J Xu, G Su",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:j8SEvjWlNXcC",
+      "cited_by_count": 0,
+      "corresponding_authors": [],
+      "pdf_url": null
+    },
     {
       "title": "Human impacts on fish biodiversity in the Yangtze River Basin: a multidimensional assessment using the Cumulative Change in Biodiversity Facets (CCBF) index",
       "year": 2026,
@@ -99,7 +109,7 @@
       "venue": "Science Advances 11 (32), eadw4347, 2025",
       "authors": "M Xu, M Fang, AM Usoof, NE Mandrak, C Chu, H Qian, Y Cao, C Liu, ...",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:PR6Y55bgFSsC",
-      "cited_by_count": 22,
+      "cited_by_count": 24,
       "corresponding_authors": [
         "M Xu",
         "X Mu",
@@ -215,7 +225,7 @@
       "venue": "Nature Communications 14 (1), 2332, 2023",
       "authors": "G Su, A Mertel, S Brosse, JM Calabrese",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:u9iWguZQMMsC",
-      "cited_by_count": 79,
+      "cited_by_count": 80,
       "corresponding_authors": [
         "G Su"
       ],
@@ -240,7 +250,7 @@
       "venue": "Journal of Cleaner Production 422, 138645, 2023",
       "authors": "C Xu, G Su, K Zhao, X Kong, H Wang, X Xu, Z Li, M Zhang, J Xu",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:WbkHhVStYXYC",
-      "cited_by_count": 26,
+      "cited_by_count": 27,
       "corresponding_authors": [
         "G Su",
         "M Zhang",
@@ -353,7 +363,7 @@
       "venue": "Science 371 (6531), 835-838, 2021",
       "authors": "G Su, M Logez, J Xu, S Tao, S Villéger, S Brosse",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:D03iK_w7-QYC",
-      "cited_by_count": 749,
+      "cited_by_count": 753,
       "corresponding_authors": [
         "G Su"
       ],
@@ -365,7 +375,7 @@
       "venue": "Global Ecology and Biogeography 30 (12), 2330-2336, 2021",
       "authors": "S Brosse, N Charpin, G Su, A Toussaint, GA Herrera‐r, PA Tedesco, ...",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:b0M2c_1WBrUC",
-      "cited_by_count": 151,
+      "cited_by_count": 153,
       "corresponding_authors": [
         "S Brosse"
       ],
@@ -389,7 +399,7 @@
       "venue": "Global Ecology and Biogeography 28 (2), 211-221, 2019",
       "authors": "G Su, S Villéger, S Brosse",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:Tyk-4Ss8FVUC",
-      "cited_by_count": 92,
+      "cited_by_count": 91,
       "corresponding_authors": [
         "G Su"
       ],
