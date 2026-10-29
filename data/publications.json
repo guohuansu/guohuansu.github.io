@@ -4,7 +4,7 @@
   "source": "Google Scholar",
   "scholar_id": "uqPekUQAAAAJ",
   "profile_url": "https://scholar.google.com/citations?user=uqPekUQAAAAJ&hl=en&pagesize=100",
-  "pdf_count": 38,
+  "pdf_count": 40,
   "works": [
     {
       "title": "Multifaceted freshwater fish α-diversity exhibits discordant spatial patterns and distinct environmental associations across the United States",
@@ -13,8 +13,10 @@
       "authors": "C Xu, Z Chen, J Li, Y Li, C Du, N Liu, J Xu, G Su",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:j8SEvjWlNXcC",
       "cited_by_count": 0,
-      "corresponding_authors": [],
-      "pdf_url": null
+      "corresponding_authors": [
+        "G Su"
+      ],
+      "pdf_url": "/pdf/2026-multifaceted-freshwater-fish-alpha-diversity.pdf"
     },
     {
       "title": "Human impacts on fish biodiversity in the Yangtze River Basin: a multidimensional assessment using the Cumulative Change in Biodiversity Facets (CCBF) index",
@@ -33,11 +35,13 @@
       "title": "Functional similarity shapes global patterns of fish naturalization and invasion richness",
       "year": 2026,
       "venue": "Proceedings of the National Academy of Sciences 123 (40), e2610486123, 2026",
-      "authors": "Z Xia, J Chen, E Jeppesen, K Guo, G Su, G Liu, F Yu, B Messyasz, J Li, ...",
+      "authors": "Z Xia, J Chen, E Jeppesen, K Guo, G Su, G Liu, F Yu, B Messyasz, J Li, DZ Zhu, N Wu",
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=uqPekUQAAAAJ&pagesize=100&citation_for_view=uqPekUQAAAAJ:fEOibwPWpKIC",
       "cited_by_count": 0,
-      "corresponding_authors": [],
-      "pdf_url": null
+      "corresponding_authors": [
+        "N Wu"
+      ],
+      "pdf_url": "/pdf/2026-functional-similarity-fish-naturalization-invasion-richness.pdf"
     },
     {
       "title": "Differential controls of warming and phosphorus enrichment on CO2, CH4, and N2O emissions in shallow lake mesocosms",

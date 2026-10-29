@@ -14,9 +14,12 @@ SCHOLAR_ID = "uqPekUQAAAAJ"
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 OUT = ROOT / "data" / "publications.json"
 AUTHOR_METADATA = ROOT / "data" / "publication-author-metadata.json"
+AUTHOR_OVERRIDES = ROOT / "data" / "publication-author-overrides.json"
 PROFILE = f"https://scholar.google.com/citations?user={SCHOLAR_ID}&hl=en&pagesize=100"
 PDF_DIR = ROOT / "pdf"
 PDF_OVERRIDES = {
+    "Multifaceted freshwater fish α-diversity exhibits discordant spatial patterns and distinct environmental associations across the United States": "2026-multifaceted-freshwater-fish-alpha-diversity.pdf",
+    "Functional similarity shapes global patterns of fish naturalization and invasion richness": "2026-functional-similarity-fish-naturalization-invasion-richness.pdf",
     "Species invasiveness and community invasibility of North American freshwater fish fauna revealed via trait-based analysis": "Su 2023 Species-invasiveness and community.pdf",
     "Mapping global biodiversity, profiling invasive species and developing a global index of biodiversity change based on taxonomic, functional and phylogenetic facets of …": "2020-mapping-global-biodiversity-doctoral-thesis.pdf",
     "Cartographie de la biodiversité mondiale, profilage des espèces envahissantes et élaboration d'un indice global du changement de la biodiversité basé sur les facettes …": "2020-mapping-global-biodiversity-doctoral-thesis.pdf",
@@ -176,7 +179,9 @@ works = [work for work in works if is_formal_journal_article(work)]
 if not works:
     raise RuntimeError("No eligible journal publications were found; existing data was preserved")
 author_metadata = json.loads(AUTHOR_METADATA.read_text(encoding="utf-8"))
+author_overrides = json.loads(AUTHOR_OVERRIDES.read_text(encoding="utf-8"))
 for work in works:
+    work["authors"] = author_overrides.get(work["title"], work["authors"])
     work["corresponding_authors"] = author_metadata.get(work["title"], [])
 
 

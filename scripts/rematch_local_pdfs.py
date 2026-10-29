@@ -18,6 +18,7 @@ from difflib import SequenceMatcher
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 PUBLICATIONS = ROOT / "data" / "publications.json"
 AUTHOR_METADATA = ROOT / "data" / "publication-author-metadata.json"
+AUTHOR_OVERRIDES = ROOT / "data" / "publication-author-overrides.json"
 MISSING = ROOT / "data" / "missing-pdfs.md"
 PDF_DIR = ROOT / "pdf"
 UPDATER = ROOT / "scripts" / "update_publications.py"
@@ -56,7 +57,9 @@ def main() -> None:
     ]
     data["works"] = works
     author_metadata = json.loads(AUTHOR_METADATA.read_text(encoding="utf-8"))
+    author_overrides = json.loads(AUTHOR_OVERRIDES.read_text(encoding="utf-8"))
     for work in works:
+        work["authors"] = author_overrides.get(work["title"], work["authors"])
         work["corresponding_authors"] = author_metadata.get(work["title"], [])
 
     files = sorted(PDF_DIR.glob("*.pdf"))

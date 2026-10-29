@@ -26,6 +26,8 @@ If the Scholar list is already current and only local PDFs changed, run `python 
 
 Corresponding-author labels are maintained in `data/publication-author-metadata.json`. Both the online updater and offline rematcher attach them to the Scholar records.
 
+Google Scholar does not supply corresponding-author roles. Verify new papers against the publisher page or full-text PDF before adding those roles; an absent metadata entry means unreviewed, not evidence that the paper has no corresponding author. `data/publication-author-overrides.json` restores verified complete author lists when Scholar truncates them, so a corresponding author at the end of the list remains visible. Both updater scripts preserve these overrides.
+
 ## Local preview
 
 Run a static web server from the repository root, for example `python -m http.server 8000`, then open `http://localhost:8000`.
