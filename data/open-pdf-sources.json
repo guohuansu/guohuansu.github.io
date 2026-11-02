@@ -22,15 +22,6 @@
     "status": "no_metadata_match"
   },
   {
-    "title": "YZFishDB: A curated DNA reference database for the fishes of the Yangtze River Basin",
-    "openalex_title": "YZFishDB: A curated DNA reference database for the fishes of the Yangtze River Basin",
-    "title_score": 1.0,
-    "doi": "https://doi.org/10.1016/j.ade.2026.100009",
-    "openalex_id": "https://openalex.org/W7164209716",
-    "candidates": [],
-    "status": "no_reusable_pdf"
-  },
-  {
     "title": "Bat Migration Intensifies Cave Fish Richness Loss Under Climate Change in China",
     "openalex_title": "Bat Migration Intensifies Cave Fish Richness Loss Under Climate Change in China",
     "title_score": 1.0,
@@ -257,5 +248,23 @@
       }
     ],
     "status": "candidate_found"
+  },
+  {
+    "title": "Corrigendum to “Spatial distribution and introduction pathways of non-native freshwater fish species in China”[Water Biol. Secur. 3 (2024) 100276]",
+    "openalex_title": "Corrigendum to “Spatial distribution and introduction pathways of non-native freshwater fish species in China” [Water Biol. Secur. 3 (2024) 100276]",
+    "title_score": 1.0,
+    "doi": "https://doi.org/10.1016/j.watbs.2026.100751",
+    "openalex_id": "https://openalex.org/W7224175305",
+    "candidates": [],
+    "status": "no_reusable_pdf"
+  },
+  {
+    "title": "YZFishDB: A curated DNA reference database for the fishes of the Yangtze River Basin",
+    "openalex_title": "YZFishDB: A curated DNA reference database for the fishes of the Yangtze River Basin",
+    "title_score": 1.0,
+    "doi": "https://doi.org/10.1016/j.ade.2026.100009",
+    "openalex_id": "https://openalex.org/W7164209716",
+    "candidates": [],
+    "status": "no_reusable_pdf"
   }
 ]

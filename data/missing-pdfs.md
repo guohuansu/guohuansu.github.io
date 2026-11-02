@@ -1,6 +1,8 @@
 # Publications without a local PDF
 
-Generated 2026-10-29. Add a PDF to `pdf/` and rerun the updater.
+Generated 2026-11-02. Add a PDF to `pdf/` and rerun the updater.
+- 2026 - Corrigendum to “Spatial distribution and introduction pathways of non-native freshwater fish species in China”[Water Biol. Secur. 3 (2024) 100276]
+- 2026 - YZFishDB: A curated DNA reference database for the fishes of the Yangtze River Basin
 
 ## Unmatched PDF files
 
