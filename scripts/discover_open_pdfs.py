@@ -19,6 +19,7 @@ import urllib.request
 from difflib import SequenceMatcher
 
 from pypdf import PdfReader
+from pdf_library import standard_filename, register_pdf
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "publications.json"
@@ -94,7 +95,7 @@ def crossref_locations(doi_url: str | None) -> list[dict]:
     if not licence:
         return []
     licence_name = "cc-" + licence.split("creativecommons.org/licenses/", 1)[1].strip("/").split("/", 1)[0]
-    return [
+    locations = [
         {
             "pdf_url": item["URL"],
             "license": licence_name,
@@ -108,11 +109,13 @@ def crossref_locations(doi_url: str | None) -> list[dict]:
             or item["URL"].lower().endswith(".pdf")
         )
     ]
-
-
-def safe_filename(year: int, title: str) -> str:
-    stem = re.sub(r"[^A-Za-z0-9]+", "-", normalise(title)).strip("-")[:135]
-    return f"{year}-{stem}.pdf"
+    # Elsevier often registers only XML/text links even for openly licensed
+    # papers. Its PII identifies the corresponding public publisher PDF URL.
+    for item in message.get("link", []):
+        pii = re.search(r"(?:/pii/|PII:)(S[0-9A-Z]+)", item.get("URL", ""), re.I)
+        if pii:
+            locations.append({"pdf_url": f"https://www.sciencedirect.com/science/article/pii/{pii[1]}/pdfft", "license": licence_name, "version": "publishedVersion", "source": {"display_name": "Crossref open-access Elsevier article", "type": "journal"}})
+    return locations
 
 
 def title_matches_pdf(path: pathlib.Path, title: str) -> tuple[bool, str]:
@@ -204,8 +207,9 @@ def main() -> None:
                 ok, detail = title_matches_pdf(temporary, work["title"])
                 candidate["validation"] = detail
             if ok:
-                final = PDF_DIR / safe_filename(work["year"], work["title"])
+                final = PDF_DIR / standard_filename(work)
                 temporary.replace(final)
+                register_pdf(work, final)
                 candidate["saved_as"] = final.name
                 accepted = True
             elif temporary.exists():

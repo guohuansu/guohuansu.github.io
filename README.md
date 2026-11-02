@@ -14,6 +14,12 @@ Google Scholar is the authoritative publication source. ResearchGate and ORCID r
 
 ## Adding downloadable PDFs
 
+PDF filenames use `Year_FirstSurname et al_Full title_Journal.pdf`, for example `2021_Su et al_Human impacts on global freshwater fish biodiversity_Science.pdf`. Single-author documents omit `et al`. Journal names exclude volume/issue/page numbers; characters invalid on Windows (such as `:`) become ` - `. Extremely long titles are shortened only to fit the 240-byte filename limit. New downloads use the same naming rule automatically.
+
+`data/pdf-library.json` records every file's metadata, old filename and SHA-256 checksum. It also retains a byte-identical duplicate with `(duplicate)` in its name; nothing was deleted. The thesis, book chapter and preprints stay in the local library but remain excluded from the journal publication list. Exact inventory matches are resolved before fuzzy matching, and corrections cannot reuse the original article's file.
+
+To preview a future naming migration run `python scripts/standardize_pdf_names.py`; use `--apply` only after reviewing its plan. It checks directory boundaries/collisions, updates tracked links and source references, and verifies that file contents did not change.
+
 Place author manuscripts or other legally shareable full texts in `pdf/`. Use a filename close to the publication title, then run `python scripts/update_publications.py`. The updater attaches unambiguous matches and writes `data/missing-pdfs.md` for everything still missing. PDF files are never deleted by the updater.
 
 For a broader open-access search, install `pypdf` and run `python scripts/discover_open_pdfs.py --download`. It checks OpenAlex, Unpaywall, and Crossref, accepts only explicitly reusable or repository-hosted manuscripts, validates the downloaded PDF against the title, and records every source in `data/open-pdf-sources.json`.

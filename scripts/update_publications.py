@@ -9,6 +9,7 @@ import urllib.request
 import unicodedata
 from datetime import date
 from difflib import SequenceMatcher
+from pdf_library import match_publication_pdfs
 
 SCHOLAR_ID = "uqPekUQAAAAJ"
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -18,29 +19,29 @@ AUTHOR_OVERRIDES = ROOT / "data" / "publication-author-overrides.json"
 PROFILE = f"https://scholar.google.com/citations?user={SCHOLAR_ID}&hl=en&pagesize=100"
 PDF_DIR = ROOT / "pdf"
 PDF_OVERRIDES = {
-    "Multifaceted freshwater fish α-diversity exhibits discordant spatial patterns and distinct environmental associations across the United States": "2026-multifaceted-freshwater-fish-alpha-diversity.pdf",
-    "Functional similarity shapes global patterns of fish naturalization and invasion richness": "2026-functional-similarity-fish-naturalization-invasion-richness.pdf",
-    "Species invasiveness and community invasibility of North American freshwater fish fauna revealed via trait-based analysis": "Su 2023 Species-invasiveness and community.pdf",
-    "Mapping global biodiversity, profiling invasive species and developing a global index of biodiversity change based on taxonomic, functional and phylogenetic facets of …": "2020-mapping-global-biodiversity-doctoral-thesis.pdf",
-    "Cartographie de la biodiversité mondiale, profilage des espèces envahissantes et élaboration d'un indice global du changement de la biodiversité basé sur les facettes …": "2020-mapping-global-biodiversity-doctoral-thesis.pdf",
-    "栖息地环境对种群营养生态位的影响——以黄颡鱼为例": "2015-habitat-environment-yellow-catfish-trophic-niches.pdf",
-    "鱼类形态特征与营养级位置之间关系初探": "2015-fish-morphology-trophic-position.pdf",
-    "大坝截流前后金沙江观音岩水电站鱼类群落功能多样性的变化": "2015-guanyinyan-dam-fish-functional-diversity.pdf",
-    "Functional diversity patterns reveal different elevations shaping Himalayan amphibian assemblages, highlighting the importance of morphologically extreme individuals": "2023-functional-diversity-himalayan-amphibian-assemblages.pdf",
-    "Impacts of nonnative fishes on local contributions to beta diversity in United States freshwater fishes": "2025-impacts-of-nonnative-fishes-on-local-contributions-to-beta-diversity-in-united-states-freshwater-fishes.pdf",
-    "Human impacts on fish biodiversity in the Yangtze River Basin: a multidimensional assessment using the Cumulative Change in Biodiversity Facets (CCBF) index": "2026-human-impacts-yangtze-fish-biodiversity-ccbf.pdf",
-    "Differential controls of warming and phosphorus enrichment on CO2, CH4, and N2O emissions in shallow lake mesocosms": "2026-differential-controls-warming-phosphorus-greenhouse-gases.pdf",
-    "Spatial Patterns and Determinants of Multidimensional Beta Diversity in the United States Freshwater Fishes": "2026-spatial-patterns-multidimensional-beta-diversity-us-fishes.pdf",
-    "Phytoplankton dominance alters basal energy pathways and food web structure in eutrophic shallow lakes": "2026-phytoplankton-dominance-basal-energy-food-web.pdf",
-    "Global diversity patterns and threats of cave fish": "2025-global-diversity-patterns-threats-cave-fish.pdf",
-    "Global Patterns and Determinants of Multiple Facets of Freshwater Fishes Beta Diversity": "2025-global-patterns-determinants-freshwater-fish-beta-diversity.pdf",
-    "Spatial distribution and introduction pathways of non-native freshwater fish species in China": "2024-spatial-distribution-introduction-pathways-nonnative-fish-china.pdf",
-    "Intra-annual compositions and diversity variations of waterbird communities in China": "2024-intra-annual-waterbird-communities-china.pdf",
-    "Assessment of greenhouse gases emissions and intensity from Chinese marine aquaculture in the past three decades": "2023-greenhouse-gas-emissions-chinese-marine-aquaculture.pdf",
-    "Societal benefits and environmental performance of Chinese aquaculture": "2023-societal-benefits-environmental-performance-chinese-aquaculture.pdf",
-    "Assessing sustainable performance of aquatic species using multiple footprints for comprehensive dietary advice": "2023-assessing-sustainable-performance-aquatic-species.pdf",
-    "Current status of greenhouse gas emissions from aquaculture in China": "2022-current-status-greenhouse-gas-emissions-aquaculture-china.pdf",
-    "Biogeographic Regionalization: Freshwater": "2022-biogeographic-regionalization-freshwater.pdf",
+    "Multifaceted freshwater fish α-diversity exhibits discordant spatial patterns and distinct environmental associations across the United States": "2026_Xu et al_Multifaceted freshwater fish α-diversity exhibits discordant spatial patterns and distinct environmental associations across the United States_Reviews in Fish Biology and Fisheries.pdf",
+    "Functional similarity shapes global patterns of fish naturalization and invasion richness": "2026_Xia et al_Functional similarity shapes global patterns of fish naturalization and invasion richness_Proceedings of the National Academy of Sciences.pdf",
+    "Species invasiveness and community invasibility of North American freshwater fish fauna revealed via trait-based analysis": "2023_Su et al_Species invasiveness and community invasibility of North American freshwater fish fauna revealed via trait-based analysis_Nature Communications.pdf",
+    "Mapping global biodiversity, profiling invasive species and developing a global index of biodiversity change based on taxonomic, functional and phylogenetic facets of …": "2020_Su_Mapping global biodiversity, profiling invasive species and developing a global index of biodiversity change based on taxonomic, functional and phylogenetic facets of freshwater fish biodiversity_University of Toulouse.pdf",
+    "Cartographie de la biodiversité mondiale, profilage des espèces envahissantes et élaboration d'un indice global du changement de la biodiversité basé sur les facettes …": "2020_Su_Mapping global biodiversity, profiling invasive species and developing a global index of biodiversity change based on taxonomic, functional and phylogenetic facets of freshwater fish biodiversity_University of Toulouse.pdf",
+    "栖息地环境对种群营养生态位的影响——以黄颡鱼为例": "2015_Sha et al_栖息地环境对种群营养生态位的影响——以黄颡鱼为例_生态学报.pdf",
+    "鱼类形态特征与营养级位置之间关系初探": "2015_Xiong et al_鱼类形态特征与营养级位置之间关系初探_湖泊科学.pdf",
+    "大坝截流前后金沙江观音岩水电站鱼类群落功能多样性的变化": "2015_Su et al_大坝截流前后金沙江观音岩水电站鱼类群落功能多样性的变化_长江流域资源与环境.pdf",
+    "Functional diversity patterns reveal different elevations shaping Himalayan amphibian assemblages, highlighting the importance of morphologically extreme individuals": "2023_Zhao et al_Functional diversity patterns reveal different elevations shaping Himalayan amphibian assemblages, highlighting the importance of morphologically extreme individuals_Ecological Indicators.pdf",
+    "Impacts of nonnative fishes on local contributions to beta diversity in United States freshwater fishes": "2025_Xu et al_Impacts of nonnative fishes on local contributions to beta diversity in United States freshwater fishes_Basic and Applied Ecology.pdf",
+    "Human impacts on fish biodiversity in the Yangtze River Basin: a multidimensional assessment using the Cumulative Change in Biodiversity Facets (CCBF) index": "2026_Du et al_Human impacts on fish biodiversity in the Yangtze River Basin - a multidimensional assessment using the Cumulative Change in Biodiversity Facets (CCBF) index_Reviews in Fish Biology and Fisheries.pdf",
+    "Differential controls of warming and phosphorus enrichment on CO2, CH4, and N2O emissions in shallow lake mesocosms": "2026_Xu et al_Differential controls of warming and phosphorus enrichment on CO2, CH4, and N2O emissions in shallow lake mesocosms_Journal of Hydrology.pdf",
+    "Spatial Patterns and Determinants of Multidimensional Beta Diversity in the United States Freshwater Fishes": "2026_Xu et al_Spatial Patterns and Determinants of Multidimensional Beta Diversity in the United States Freshwater Fishes_Diversity and Distributions.pdf",
+    "Phytoplankton dominance alters basal energy pathways and food web structure in eutrophic shallow lakes": "2026_Xie et al_Phytoplankton dominance alters basal energy pathways and food web structure in eutrophic shallow lakes_iScience.pdf",
+    "Global diversity patterns and threats of cave fish": "2025_Bai et al_Global diversity patterns and threats of cave fish_Global Ecology and Biogeography.pdf",
+    "Global Patterns and Determinants of Multiple Facets of Freshwater Fishes Beta Diversity": "2025_Chen et al_Global Patterns and Determinants of Multiple Facets of Freshwater Fishes Beta Diversity_Global Ecology and Biogeography.pdf",
+    "Spatial distribution and introduction pathways of non-native freshwater fish species in China": "2024_Qiao et al_Spatial distribution and introduction pathways of non-native freshwater fish species in China_Water Biology and Security.pdf",
+    "Intra-annual compositions and diversity variations of waterbird communities in China": "2024_Li et al_Intra-annual compositions and diversity variations of waterbird communities in China_Global Ecology and Conservation.pdf",
+    "Assessment of greenhouse gases emissions and intensity from Chinese marine aquaculture in the past three decades": "2023_Xu et al_Assessment of greenhouse gases emissions and intensity from Chinese marine aquaculture in the past three decades_Journal of Environmental Management.pdf",
+    "Societal benefits and environmental performance of Chinese aquaculture": "2023_Xu et al_Societal benefits and environmental performance of Chinese aquaculture_Journal of Cleaner Production.pdf",
+    "Assessing sustainable performance of aquatic species using multiple footprints for comprehensive dietary advice": "2023_Xu et al_Assessing sustainable performance of aquatic species using multiple footprints for comprehensive dietary advice_Journal of Cleaner Production.pdf",
+    "Current status of greenhouse gas emissions from aquaculture in China": "2022_Xu et al_Current status of greenhouse gas emissions from aquaculture in China_Water Biology and Security.pdf",
+    "Biogeographic Regionalization: Freshwater": "2022_Dias et al_Biogeographic Regionalization - Freshwater_Encyclopedia of Biodiversity.pdf",
 }
 EXCLUDED_TITLES = {
     # This is the name of a repository page accidentally indexed as a Scholar
@@ -85,27 +86,7 @@ def normalize_title(value):
 
 
 def match_pdfs(publications):
-    files = sorted(PDF_DIR.glob("*.pdf")) if PDF_DIR.exists() else []
-    # Keep explicitly mapped files out of the fuzzy candidate pool. Otherwise a
-    # similar title appearing earlier in Scholar can consume the reserved PDF.
-    reserved = {PDF_DIR / name for name in PDF_OVERRIDES.values() if (PDF_DIR / name).exists()}
-    unused = set(files) - reserved
-    for publication in publications:
-        override = PDF_OVERRIDES.get(publication["title"])
-        if override and (PDF_DIR / override).exists():
-            path = PDF_DIR / override
-            publication["pdf_url"] = "/pdf/" + urllib.parse.quote(path.name)
-            unused.discard(path)
-            continue
-        title = normalize_title(publication["title"])
-        ranked = sorted(((SequenceMatcher(None, title, normalize_title(path.stem)).ratio(), path) for path in unused), key=lambda item: item[0], reverse=True)
-        if ranked and ranked[0][0] >= 0.56 and (len(ranked) == 1 or ranked[0][0] - ranked[1][0] >= 0.08):
-            path = ranked[0][1]
-            publication["pdf_url"] = "/pdf/" + urllib.parse.quote(path.name)
-            unused.remove(path)
-        else:
-            publication["pdf_url"] = None
-    return files, unused
+    return match_publication_pdfs(publications, PDF_DIR, PDF_OVERRIDES)
 
 
 request = urllib.request.Request(

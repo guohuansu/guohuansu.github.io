@@ -14,6 +14,7 @@ import unicodedata
 import urllib.parse
 from datetime import date
 from difflib import SequenceMatcher
+from pdf_library import match_publication_pdfs
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 PUBLICATIONS = ROOT / "data" / "publications.json"
@@ -62,33 +63,8 @@ def main() -> None:
         work["authors"] = author_overrides.get(work["title"], work["authors"])
         work["corresponding_authors"] = author_metadata.get(work["title"], [])
 
-    files = sorted(PDF_DIR.glob("*.pdf"))
     overrides = load_updater_literal("PDF_OVERRIDES")
-    reserved = {PDF_DIR / name for name in overrides.values() if (PDF_DIR / name).exists()}
-    unused = set(files) - reserved
-
-    for work in works:
-        override = overrides.get(work["title"])
-        if override and (PDF_DIR / override).exists():
-            work["pdf_url"] = "/pdf/" + urllib.parse.quote(override)
-            continue
-        title = normalize_title(work["title"])
-        ranked = sorted(
-            (
-                (SequenceMatcher(None, title, normalize_title(path.stem)).ratio(), path)
-                for path in unused
-            ),
-            key=lambda item: item[0],
-            reverse=True,
-        )
-        if ranked and ranked[0][0] >= 0.56 and (
-            len(ranked) == 1 or ranked[0][0] - ranked[1][0] >= 0.08
-        ):
-            path = ranked[0][1]
-            work["pdf_url"] = "/pdf/" + urllib.parse.quote(path.name)
-            unused.remove(path)
-        else:
-            work["pdf_url"] = None
+    files, unused = match_publication_pdfs(works, PDF_DIR, overrides)
 
     data["total_works"] = len(works)
     data["pdf_count"] = sum(bool(work["pdf_url"]) for work in works)

@@ -16,6 +16,7 @@ import unicodedata
 import urllib.request
 
 from pypdf import PdfReader
+from pdf_library import standard_filename
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 PUBLICATIONS = ROOT / "data" / "publications.json"
@@ -133,7 +134,7 @@ def main() -> None:
             entry.update(status="skipped", detail="publication title not found")
             audit.append(entry)
             continue
-        final = PDF_DIR / source.get("filename", filename(work["year"], work["title"]))
+        final = PDF_DIR / source.get("filename", standard_filename(work))
         if final.exists():
             try:
                 entry.update(
