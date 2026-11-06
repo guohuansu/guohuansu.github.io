@@ -12,11 +12,12 @@ function escapeHtml(value) {
 }
 
 function normalizeAuthor(name) {
-  return String(name ?? '')
+  const normalized = String(name ?? '')
     .normalize('NFKD')
     .replace(/[\u0300-\u036f]/g, '')
     .replace(/[^a-zA-Z\u3400-\u9fff]/g, '')
     .toLowerCase();
+  return ['gsu', 'ghsu', 'guohuansu', '苏国欢'].includes(normalized) ? 'gsu' : normalized;
 }
 
 function isSiteOwner(name) {
@@ -60,6 +61,7 @@ function renderPublication(work) {
       <div>
         <h3>${escapeHtml(work.title)}</h3>
         <p>${formatAuthors(work.authors, work.corresponding_authors)}${work.venue ? ` · <em>${escapeHtml(work.venue)}</em>` : ''}${work.cited_by_count != null ? ` · ${escapeHtml(work.cited_by_count)} citations in Google Scholar` : ''}</p>
+        ${work.corresponding_authors_status === 'pending' ? '<p class="author-review-note">Corresponding-author role awaiting verification</p>' : ''}
       </div>
       <div class="publication-links">
         ${work.pdf_url ? `<a class="pdf-link" href="${escapeHtml(work.pdf_url)}" download>PDF ↓</a>` : ''}
@@ -90,11 +92,13 @@ function render() {
     `${work.title} ${work.venue} ${work.year}`.toLowerCase().includes(query)
   );
 
-  const leadWorks = shown.filter(isFirstOrCorrespondingAuthor);
-  const otherWorks = shown.filter(work => !isFirstOrCorrespondingAuthor(work));
+  const pendingWorks = shown.filter(work => work.corresponding_authors_status === 'pending' && !isFirstOrCorrespondingAuthor(work));
+  const reviewedWorks = shown.filter(work => work.corresponding_authors_status !== 'pending' || isFirstOrCorrespondingAuthor(work));
+  const leadWorks = reviewedWorks.filter(isFirstOrCorrespondingAuthor);
+  const otherWorks = reviewedWorks.filter(work => !isFirstOrCorrespondingAuthor(work));
 
   list.innerHTML = shown.length
-    ? renderGroup('First- or corresponding-author publications', leadWorks) + renderGroup('Other publications', otherWorks)
+    ? renderGroup('First- or corresponding-author publications', leadWorks) + renderGroup('Other publications', otherWorks) + renderGroup('Author roles awaiting verification', pendingWorks)
     : '<p>No matching publications found.</p>';
 }
 

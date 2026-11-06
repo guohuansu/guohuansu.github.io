@@ -15,6 +15,7 @@ import urllib.parse
 from datetime import date
 from difflib import SequenceMatcher
 from pdf_library import match_publication_pdfs
+from author_metadata import apply_author_metadata
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 PUBLICATIONS = ROOT / "data" / "publications.json"
@@ -57,11 +58,7 @@ def main() -> None:
         and is_formal_journal_article(work, non_journal_markers)
     ]
     data["works"] = works
-    author_metadata = json.loads(AUTHOR_METADATA.read_text(encoding="utf-8"))
-    author_overrides = json.loads(AUTHOR_OVERRIDES.read_text(encoding="utf-8"))
-    for work in works:
-        work["authors"] = author_overrides.get(work["title"], work["authors"])
-        work["corresponding_authors"] = author_metadata.get(work["title"], [])
+    apply_author_metadata(works)
 
     overrides = load_updater_literal("PDF_OVERRIDES")
     files, unused = match_publication_pdfs(works, PDF_DIR, overrides)

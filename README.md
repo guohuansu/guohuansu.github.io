@@ -34,6 +34,8 @@ Corresponding-author labels are maintained in `data/publication-author-metadata.
 
 Google Scholar does not supply corresponding-author roles. Verify new papers against the publisher page or full-text PDF before adding those roles; an absent metadata entry means unreviewed, not evidence that the paper has no corresponding author. `data/publication-author-overrides.json` restores verified complete author lists when Scholar truncates them, so a corresponding author at the end of the list remains visible. Both updater scripts preserve these overrides.
 
+Author roles now resolve through the shared `scripts/author_metadata.py` module. Confirmed records are persisted by stable Scholar citation ID in `data/publication-author-identities.json`, with uniquely normalized titles as a fallback; original articles and corrections have separate identities. New records without evidence receive `corresponding_authors_status: pending`, appear in a temporary “Author roles awaiting verification” group instead of “Other publications”, and are listed in `data/pending-author-review.json` / `.md`. The weekly workflow emits an Actions warning and run summary when review is needed. Confirm them using the publication page, PDF, or the site owner's explicit confirmation; then add a verified identity or curated title entry. An explicit verified empty list is distinct from a missing record. Owner-name aliases (`G Su`, `GH Su`, `Guohuan Su`, `苏国欢`) share the same star/bold matching key.
+
 ## Local preview
 
 Run a static web server from the repository root, for example `python -m http.server 8000`, then open `http://localhost:8000`.

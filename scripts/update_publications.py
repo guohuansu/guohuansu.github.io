@@ -10,6 +10,7 @@ import unicodedata
 from datetime import date
 from difflib import SequenceMatcher
 from pdf_library import match_publication_pdfs
+from author_metadata import apply_author_metadata
 
 SCHOLAR_ID = "uqPekUQAAAAJ"
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -159,11 +160,7 @@ works = [work for work in works if work["title"] not in EXCLUDED_TITLES]
 works = [work for work in works if is_formal_journal_article(work)]
 if not works:
     raise RuntimeError("No eligible journal publications were found; existing data was preserved")
-author_metadata = json.loads(AUTHOR_METADATA.read_text(encoding="utf-8"))
-author_overrides = json.loads(AUTHOR_OVERRIDES.read_text(encoding="utf-8"))
-for work in works:
-    work["authors"] = author_overrides.get(work["title"], work["authors"])
-    work["corresponding_authors"] = author_metadata.get(work["title"], [])
+apply_author_metadata(works)
 
 
 # Scholar profiles default to citation-count order; the website is easier to scan

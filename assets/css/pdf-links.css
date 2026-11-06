@@ -28,6 +28,12 @@
   font-weight: 800;
 }
 
+.publication .author-review-note {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
 .corresponding-mark {
   color: var(--teal);
   font-size: 0.82em;
