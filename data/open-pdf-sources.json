@@ -266,6 +266,13 @@
     "openalex_id": "https://openalex.org/W7224175305",
     "candidates": [
       {
+        "url": "https://www.sciencedirect.com/science/article/pii/S2772735126002052/pdf",
+        "license": "cc-by-nc-nd",
+        "version": "publishedVersion",
+        "source": "Water Biology and Security",
+        "download": "HTTP Error 403: Forbidden"
+      },
+      {
         "url": "https://www.sciencedirect.com/science/article/pii/S2772735126002052/pdfft",
         "license": "cc-by-nc-nd",
         "version": "publishedVersion",
