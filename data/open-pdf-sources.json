@@ -263,13 +263,13 @@
     "openalex_title": "Corrigendum to “Spatial distribution and introduction pathways of non-native freshwater fish species in China” [Water Biol. Secur. 3 (2024) 100276]",
     "title_score": 1.0,
     "doi": "https://doi.org/10.1016/j.watbs.2026.100751",
-    "openalex_id": "https://openalex.org/W7224175305",
+    "openalex_id": null,
     "candidates": [
       {
         "url": "https://www.sciencedirect.com/science/article/pii/S2772735126002052/pdf",
         "license": "cc-by-nc-nd",
         "version": "publishedVersion",
-        "source": "Water Biology and Security",
+        "source": "publisher",
         "download": "HTTP Error 403: Forbidden"
       },
       {
@@ -287,7 +287,7 @@
     "openalex_title": "Corrigendum to “YZFishDB: A curated DNA reference database for the fishes of the Yangtze River Basin” [Aquat. Divers. Ecol. 1 (2026) 100009]",
     "title_score": 1.0,
     "doi": "https://doi.org/10.1016/j.ade.2026.100056",
-    "openalex_id": "https://openalex.org/W7223903107",
+    "openalex_id": null,
     "candidates": [
       {
         "url": "https://www.sciencedirect.com/science/article/pii/S3117863426000560/pdfft",
