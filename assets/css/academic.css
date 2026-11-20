@@ -118,6 +118,12 @@ section[id], article[id] { scroll-margin-top: 2rem; }
 .case-copy h2 { font-size: clamp(2rem, 3.8vw, 3.5rem); text-wrap: pretty; }
 .case-question { margin-top: .75rem; font-weight: 700; }
 .case-finding { margin-top: .55rem; color: var(--muted); max-width: 68ch; }
+.case-figure { margin-top: 1.3rem; background: var(--surface); border: 1px solid var(--border); border-radius: .7rem; }
+.case-figure-media { display: grid; place-items: center; padding: clamp(.65rem, 2vw, 1.25rem); background: white; border-radius: .7rem .7rem 0 0; cursor: zoom-in; }
+.case-figure-media img { width: auto; height: auto; max-width: 100%; max-height: 29rem; }
+.case-figure figcaption { padding: .9rem 1rem; border-top: 1px solid var(--border); font-size: .89rem; }
+.figure-meta { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: .4rem 1rem; margin-top: .55rem; font-size: .78rem; color: var(--muted); }
+.figure-meta > a { font-weight: 700; color: var(--teal); }
 .case-citation { border-left: 2px solid #a6bba9; padding-left: .85rem; margin: 1.2rem 0; }
 .case-citation p { font-size: .88rem; }
 .case-citation span { font-size: .78rem; color: var(--teal); font-weight: 700; }
