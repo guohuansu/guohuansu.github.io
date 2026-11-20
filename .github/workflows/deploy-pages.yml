@@ -26,7 +26,7 @@ jobs:
       - name: Prepare static website
         run: |
           mkdir "$RUNNER_TEMP/site"
-          cp index.html "$RUNNER_TEMP/site/"
+          cp index.html selected-work.html publications.html "$RUNNER_TEMP/site/"
           cp -R assets data pdf "$RUNNER_TEMP/site/"
           touch "$RUNNER_TEMP/site/.nojekyll"
       - uses: actions/upload-pages-artifact@v3

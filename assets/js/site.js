@@ -64,8 +64,8 @@ function renderPublication(work) {
         ${work.corresponding_authors_status === 'pending' ? '<p class="author-review-note">Corresponding-author role awaiting verification</p>' : ''}
       </div>
       <div class="publication-links">
-        ${work.pdf_url ? `<a class="pdf-link" href="${escapeHtml(work.pdf_url)}" download>PDF ↓</a>` : ''}
-        ${work.url ? `<a href="${escapeHtml(work.url)}" target="_blank" rel="noopener">Scholar ↗</a>` : ''}
+        ${work.pdf_url ? `<a class="button primary pdf-link" href="${escapeHtml(work.pdf_url)}" download>PDF ↓</a>` : ''}
+        ${work.url ? `<a class="button secondary" href="${escapeHtml(work.url)}" target="_blank" rel="noopener">Scholar ↗</a>` : ''}
       </div>
     </article>
   `;
@@ -76,7 +76,7 @@ function renderGroup(title, publications) {
   return `
     <section class="publication-group">
       <header class="publication-group-header">
-        <h3>${escapeHtml(title)}</h3>
+        <h2>${escapeHtml(title)}</h2>
         <span>${publications.length} publication${publications.length === 1 ? '' : 's'}</span>
       </header>
       ${publications.map(renderPublication).join('')}
@@ -85,11 +85,11 @@ function renderGroup(title, publications) {
 }
 
 function render() {
-  const query = document.querySelector('#publication-search').value.toLowerCase();
+  const query = document.querySelector('#publication-search').value.trim().toLowerCase();
   const year = document.querySelector('#year-filter').value;
   const shown = works.filter(work =>
     (year === 'all' || String(work.year) === year) &&
-    `${work.title} ${work.venue} ${work.year}`.toLowerCase().includes(query)
+    `${work.title} ${work.authors} ${work.venue} ${work.year}`.toLowerCase().includes(query)
   );
 
   const pendingWorks = shown.filter(work => work.corresponding_authors_status === 'pending' && !isFirstOrCorrespondingAuthor(work));
@@ -113,5 +113,3 @@ fetch('data/publications.json', { cache: 'no-store' }).then(response => response
 
 document.querySelector('#publication-search').addEventListener('input', render);
 document.querySelector('#year-filter').addEventListener('change', render);
-document.querySelector('#current-year').textContent = new Date().getFullYear();
-const button = document.querySelector('.menu-button');
